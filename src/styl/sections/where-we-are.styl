@@ -1,0 +1,319 @@
+.where
+  margin 107px 0 0 0
+
+  &-title
+    &-container
+      margin 60px 0 80px 82px
+
+  &-locations
+    &-container
+      background-image linear-gradient(4deg, #fefefe, #fbfbfb)
+      display flex
+
+    &-content
+      display flex
+      flex-direction column
+      margin 0 auto
+      width 1163px
+
+    &-info
+      display flex
+      flex-direction row
+
+    &-title
+      color $white
+      font-size 26px
+      letter-spacing 0.3px
+      line-height 36px
+
+      &-container
+        margin-bottom 44px
+        width 310px
+
+    &-pins
+      cursor pointer
+      display flex
+      flex-direction row
+      margin-bottom 24px
+      width 172px
+
+      &-container
+        display flex
+        flex-wrap wrap
+        justify-content space-between
+        width 390px
+
+    &-icon
+      &-container
+        margin-right 21px
+
+    &-button
+      &-container
+        display flex
+        justify-content center
+        margin 76px 0 80px 0
+
+  &-pins
+    &-carousel
+      &-mobile
+        display none !important
+
+    &-container
+      background-image url("../img/backgrounds/bg-where-pins.jpg")
+      background-position center
+      background-repeat no-repeat
+      background-size cover
+      height 385px
+      padding 50px 0 0 82px
+      width 538px
+
+  &-carousel
+    margin 0 auto
+
+    &-mobile
+      display none !important
+
+    &-container
+      background-image url("../img/backgrounds/bg-where-cards.png")
+      background-position center
+      background-repeat no-repeat
+      background-size initial
+      height 570px
+      padding 63px 0 0 0
+
+    &-navigation
+      & .owl-prev,
+      & .owl-next
+        background-color $blueUltra !important
+        border-radius 100px
+        height 69px
+        position absolute
+        top 85px
+        width 69px
+
+      & .owl-prev
+        left -22px
+
+        & .solutions-navigation-icon
+          margin 6px 0 0 12px
+
+      & .owl-next
+        right -22px
+
+        & .solutions-navigation-icon
+          margin 6px 12px 0 0
+
+      & .owl-dots
+        bottom -45px
+        left 0
+        margin 0 auto
+        position absolute
+        right 0
+        width 42px
+
+      & .owl-dot,
+      & .owl-dot.active
+        border-radius 100px
+        height 11px
+        width 11px
+
+      & .owl-dot
+        background-color transparent !important
+        border solid 1px $blue !important
+
+      & .owl-dot.active
+        background-color $blue !important
+
+  &-card
+    background-color $white
+    height 276px
+    padding-top 22px
+    width 526px
+
+    &-container
+      display flex
+      flex-direction row
+      justify-content space-between
+      margin 0 auto
+      width 1163px
+
+    &-title
+      &-container
+        align-items center
+        background-color #3d63a1
+        display flex
+        height 47px
+        padding-left 112px
+
+        & h3
+          color $white
+          font-size 25px
+          letter-spacing -1px
+
+    &-pin
+      &-container
+        display flex
+        flex-direction row
+        margin 38px 71px 0 71px
+
+    &-location
+      color $grayLabels
+      font-size 12px
+      letter-spacing -0.1px
+
+      &-container
+        position absolute
+        top -22px
+
+    &-address
+      color #5b5b5b
+      font-size 16px
+      letter-spacing 0.2px
+      line-height 29px
+
+      &-container
+        position relative
+
+  &-icon
+    height 21px
+    width 15px !important
+
+    &-container
+      margin 5px 26px 0 0
+
+  &-button
+    &-container
+      display flex
+      justify-content center
+      margin 95px 0 0 0
+
+@media screen and (max-width 1300px)
+  .where
+    &-title
+      &-container
+        margin-left 40px
+
+    &-locations
+      &-content
+        width 920px
+
+    &-pins
+      &-container
+        padding-left 40px
+        width 440px
+
+    &-map
+      width 480px
+
+    &-carousel
+      display none !important
+
+      &-mobile
+        display block !important
+
+      &-navigation
+        & .owl-dots
+          width 84px
+
+    &-card
+      margin 0 auto
+
+@media screen and (max-width 970px)
+  .where
+    &-locations
+      &-content
+        width 480px
+
+      &-info
+        flex-direction column
+
+    &-pins
+      &-container
+        width 480px
+
+@media screen and (max-width 650px)
+  .where
+    &-title
+      &-container
+        margin 20px 0 40px 40px
+
+    &-carousel
+      &-container
+        height 710px
+
+      &-navigation
+        & .owl-prev,
+        & .owl-next
+          height 55px
+          top 140px
+          width 55px
+
+    &-card
+      height 450px
+      width 290px
+
+      &-title
+        &-container
+          padding-left 72px
+
+      &-pin
+        &-container
+          margin 38px 30px 0 30px
+
+@media screen and (max-width 520px)
+  .where
+    &-locations
+      &-content
+        width 100%
+
+      &-info
+        flex-direction column
+
+    &-pins
+      &-container
+        width 100%
+
+@media screen and (max-width 450px)
+  .where
+    &-locations
+      &-title
+        &-container
+          width 215px
+
+      &-pins
+        &-container
+          display none !important
+
+    &-pins
+      &-container
+        padding-right 40px
+
+      &-carousel
+        &-navigation
+          &-mobile
+            & .owl-dots
+              bottom -23px
+              left 0
+              margin 0 auto
+              right 0
+              width 36px
+
+            & .owl-dot
+              border solid 1px #fff !important
+
+            & .owl-dot
+              background-color transparent !important
+
+            & .owl-dot.active
+              background-color $white !important
+
+            & .owl-nav
+              bottom -28px
+              position absolute
+              right 0
+
+            & .owl-prev
+              margin-right 20px
+          
+        &-mobile
+          display block !important

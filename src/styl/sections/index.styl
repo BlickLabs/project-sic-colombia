@@ -1,0 +1,486 @@
+.home
+  &-cover
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    height 740px
+    padding 215px 0 0 208px
+
+    &-info
+      max-width 522px
+
+    &-subtitle
+      &-container
+        margin 27px 0 54px 0
+
+      &-container h2
+        letter-spacing 0.5px
+
+    &-arrow
+      height 31px
+      width 13px !important
+
+      &-container
+        margin-top 80px
+
+  &-solutions
+    background-image url("../img/backgrounds/bg-home-solutions.png")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    display flex
+    flex-direction row
+    height 498px
+    justify-content center
+    padding-top 109px
+
+    &-button
+      &-desktop
+        display block
+
+      &-mobile
+        display none
+
+    &-title
+      &-container
+        margin-bottom 18px
+        max-width 320px
+
+    &-info
+      &-container
+        display flex
+        flex-wrap wrap
+        margin 12px 0 0 150px
+        height 274px
+        width 413px
+
+      &-content
+        width 170px
+
+        &:nth-child(odd)
+          margin-right 73px
+
+        &:nth-child(-n + 2)
+          margin-bottom 63px
+
+    &-icon
+      &-container
+        align-items center
+        display flex
+        height 42px
+        margin-bottom 21px
+
+      &-renovation,
+      &-extension
+        height 42px
+        width 41px
+
+      &-instalation
+        height 35px
+        width 35px
+
+      &-warranty
+        height 25px
+        width 38px
+
+  &-clients
+    background-image url("../img/backgrounds/bg-home-our-clientes.jpg")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    display flex
+    flex-direction row
+    height 305px
+    justify-content center
+    padding-top 56px
+
+    &-info
+      margin-bottom 30px
+
+    &-title
+      &-container
+        margin-bottom 15px
+
+    &-logos
+      &-container
+        display flex
+        flex-wrap wrap
+        height 114px
+        justify-content space-between
+        margin-left 160px
+        width 345px
+
+    &-logo
+
+      &-content
+        align-items flex-end
+        display flex
+        height 40px
+        width 134px
+
+        &:nth-child(-n + 2)
+          margin-bottom 60px
+
+      &-lenovo
+        height 26px
+        width 124px
+
+      &-dell
+        height 32px
+        width 93px
+
+      &-diebold
+        height 24px
+        width 134px
+
+      &-enova
+        height 40px
+        width 108px
+
+  &-location
+    background-image url("../img/backgrounds/bg-home-where-we-are.png")
+    background-position top left
+    background-repeat no-repeat
+    background-size cover
+    display flex
+    flex-direction row
+    height 657px
+    justify-content center
+    margin-top -31px
+    padding 124px 0 0 0
+
+    &-info
+      margin-bottom 50px
+
+      &-container
+        display flex
+        justify-content flex-end
+        padding-right 57px
+        width 914.8px
+
+    &-points
+      &-container
+        display flex
+        flex-direction row
+        margin-bottom 25px
+
+    &-icon
+      height 21px
+      width 15px
+
+      &-container
+        margin-right 21px
+
+    &-button
+      &-container
+        margin-top 59px
+
+        & button
+          background-color $blueStrong
+          transition 0.3s
+
+        & button:hover
+          background-color $blue
+          transition 0.3s
+
+  &-service
+    background-image url("../img/backgrounds/bg-home-technical-service.png")
+    background-position bottom
+    background-repeat no-repeat
+    background-size cover
+    height auto
+
+    &-title
+      &-container
+        margin-top 164px
+        max-width 305px
+
+    &-content
+      display flex
+      flex-direction row
+      margin-left 14%
+
+    &-iframe
+      display flex
+      justify-content center
+      margin 200px 0 100px 0
+
+    &-contact
+      &-container
+        background-image url("../img/backgrounds/bg-home-contact-us.jpg")
+        background-position bottom
+        background-repeat no-repeat
+        background-size cover
+        display flex
+        flex-direction column
+        height 220px
+        justify-content center
+        margin 48px 0 0 140px
+        padding-left 65px
+        width 332px
+
+      &-title
+        &-container
+          margin-bottom 30px
+
+    &-goforms
+      display flex
+      flex-direction row
+      margin 126px 0 0 120px
+
+      &-content
+        background-color $grayStrong
+        height 304px
+        padding 35px 0 0 43px
+        width 274px
+
+      &-content:nth-child(1)
+        margin 110px 153px 0 0
+
+      &-content a button
+        height 40px
+        padding 0 30px
+
+    &-icon
+      height 25px
+      width 38px
+
+      &-container
+        margin-bottom 20px
+
+    &-subtitle
+      color $blackLight
+      letter-spacing -0.1px
+
+    &-paragraph
+      &-container
+        margin 10px 0 35px 0
+        max-width 164px
+
+        & p
+          color $gray
+          letter-spacing -0.1px
+          line-height 21px
+
+.cover
+  &-one
+    background-image url("../img/backgrounds/bg-home-cover-one.jpg")
+
+  &-two
+    background-image url("../img/backgrounds/bg-home-cover-two.jpg")
+
+  &-three
+    background-image url("../img/backgrounds/bg-home-cover-three.jpg")
+
+  &-four
+    background-image url("../img/backgrounds/bg-home-cover-four.jpg")
+
+  &-five
+    background-image url("../img/backgrounds/bg-home-cover-five.jpg")
+
+.owl-dots
+  bottom 73px
+  position absolute
+  right 73px
+
+.owl-dot
+  border-radius 100px
+  background-color #d8d8d8 !important
+  height 8px
+  margin 0 5px
+  width 8px
+
+.owl-dot.active
+  background-color transparent !important
+  border solid 1px $white !important
+
+@media screen and (min-width 1940px)
+  .home
+    &-location
+      margin-top -60px
+
+@media screen and (min-width 860px) and (max-width 1130px)
+  .home
+    &-cover
+      padding-left 60px
+
+    &-solutions
+      &-info
+        &-container
+          margin 12px 0 0 60px
+
+    &-clients
+      &-logos
+        &-container
+          margin-left 60px
+
+    &-location
+      padding-right 10%
+
+    &-service
+      &-content
+        justify-content center
+        margin-left 0
+
+      &-goforms
+        margin-left 60px
+
+        &-content
+          &:nth-child(1)
+            margin-right 70px
+
+@media screen and (max-width 859px)
+  .home
+    &-cover
+      height 480px
+      padding 100px 30px 0 30px
+
+      &-subtitle
+        &-container
+          margin-bottom 30px
+
+      &-arrow
+        &-container
+          margin-top 30px
+
+    &-solutions
+      align-items center
+      flex-direction column
+      height auto
+      padding 40px 30px
+
+      &-button
+        &-desktop
+          display none
+
+        &-mobile
+          display block
+          margin-top 40px
+
+          &-container
+            display flex
+            justify-content flex-start
+            width 100%
+
+      &-title
+        &-container
+          max-width initial
+
+      &-info
+        &-container
+          justify-content center
+          height auto
+          margin-left 0
+          width 100%
+
+        &-content
+          width 140px
+
+        &-content
+          margin 10px !important
+
+    &-clients
+      align-items center
+      flex-direction column
+      height auto
+      padding 50px 30px 60px 30px
+
+      &-info
+        &-container
+          max-width 408px
+
+      &-logos
+        &-container
+          height auto
+          justify-content space-between
+          margin 15px 0 35px 0
+          max-width 318px
+          width 100%
+
+      &-logo
+        &-content
+          width 50%
+
+          &:nth-child(odd)
+            margin-right 0
+
+          &:nth-child(even)
+            display flex
+            justify-content flex-end
+
+          &:nth-child(2) img
+            margin-right 16px
+            
+
+    &-location
+      background-position top right
+      height auto
+      margin-top -20px
+      justify-content center
+      padding 70px 0
+
+      &-info
+        &-container
+          justify-content center
+          padding-right 0
+          width 100%
+
+    &-service
+      &-iframe
+        display block
+        margin-left auto
+        margin-right auto
+        overflow auto
+        width 260px
+
+      &-content
+        align-items center
+        flex-direction column
+        margin-left 0
+        padding 0 30px
+
+      &-title
+        &-container
+          margin-top 50px
+          max-width 100%
+
+      &-goforms
+        flex-direction column
+        margin 0
+
+        &-content
+          &:nth-child(1)
+            margin 50px 0
+
+      &-contact
+        &-container
+          margin-left 30px
+          padding-left 33px
+          width 270px
+
+  .owl-dots
+    bottom 25px
+    right 30px
+
+@media screen and (min-width 769px) and (max-width 859px)
+  .home
+    &-clients
+      &-logos
+        &-container
+          max-width 406px
+
+@media screen and (max-width 433px)
+  .home
+    &-solutions
+      max-width 320px
+
+      &-info
+        &-content
+          margin 0 0 30px 0 !important
+          width 122px
+
+          & span
+            font-size 10px
+
+          &:nth-child(odd)
+            margin-right 15px !important

@@ -1,0 +1,156 @@
+.about
+  margin 107px 0 0 0
+
+  &-info
+    &-container
+      display flex
+      flex-direction row
+      justify-content space-between
+      margin 98px 0 0 9.6%
+
+    &-content
+      margin 98px 5.5% 0 0
+
+    &-img
+      height 560px
+      width auto
+
+      &-container
+        height 560px
+
+  &-paragraph
+    &-container
+      margin 40px 0 0 0
+      min-width 600px
+      max-width 600px
+
+      & p
+        color $grayLight
+        line-height 29px
+        margin-bottom 30px
+
+  &-convictions
+    &-container
+      background-image url("../img/backgrounds/bg-blue-about.png")
+      background-position center
+      background-repeat no-repeat
+      background-size cover
+      height 385px
+      position relative
+
+    &-card
+      background-color $grayExtraLight
+      height 385px
+      padding 58px
+      width 363px
+
+      &-container
+        left 0
+        margin 0 auto
+        position absolute
+        right 0
+        top 135px
+        width 1166px
+
+      &-title
+        color $blackLight
+        font-size 20px
+        letter-spacing -0.1px
+
+        &-container
+          margin 38px 0
+
+      &-description
+        color $gray
+        font-size 13px
+        letter-spacing -0.1px
+        line-height 24px
+
+  &-icon
+    &-container
+      width 31px
+
+    &-cup
+      height 29px
+      width 30px
+
+    &-eye
+      height 16px
+      width 31px
+
+    &-flag
+      height 30px
+      width 30px
+
+  &-footer
+    background-image url("../img/backgrounds/bg-footer-about.png")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    height 273px
+
+@media screen and (max-width 1221px)
+  .about
+    &-convictions
+      &-container
+        & .owl-dots
+          bottom -72px
+          left 0
+          margin 0 auto
+          right 0
+          width 54px
+
+        & .owl-dot.active
+          background-color $blue !important
+          border solid 0px $blue !important
+
+      &-card
+        padding 35px
+        width 310px
+
+        &-container
+          width 100%
+
+@media screen and (min-width 900px) and (max-width 1300px)
+  .about
+    &-paragraph
+      &-container
+        min-width 460px
+
+    &-info
+      &-img,
+      &-img-container
+        height auto
+        width 100%
+
+@media screen and (max-width 899px)
+  .about
+    margin-top 70px
+
+    &-info
+      &-container
+        flex-direction column-reverse
+        margin 0 0 30px 0
+
+      &-content
+        margin 50px 30px 0 30px
+
+      &-img
+        height auto
+        width 100%
+
+        &-container
+          height auto
+          margin 0 auto
+          width 80%
+
+    &-paragraph
+      &-container
+        min-width 100%
+
+@media screen and (max-width 480px)
+  .about
+    &-info
+      &-img
+        &-container
+          width 100%

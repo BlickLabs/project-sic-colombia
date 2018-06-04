@@ -1,0 +1,44 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+<title>SIC | Quote</title>
+{% endblock %}
+
+{% block content %}
+<div class="quote">
+  <div class="quote-form-container">
+    <div class="quote-title-container">
+      <h1 class="fs-39 barlow-light">Quote</h1>
+    </div>
+    <form class="quote-form" name="sic-quote-form-en" method="post" action="http://integrations.blick.mx/sic/quote/form/">
+      <div class="material-container">
+        <label class="material-label opensans-semibold" for="name">Name</label>
+        <input class="material-input opensans-semibold" type="text" name="name" id="name" required>
+      </div>
+      <div class="material-container">
+        <label class="material-label opensans-semibold" for="email">Email</label>
+        <input class="material-input opensans-semibold" type="email" name="email" id="email" required>
+      </div>
+      <div class="select">
+        <select class="select-text opensans-semibold" type="text" name="company" required>
+          <option value="" disabled selected></option>
+          <option value="Soluciones Corporativas">Corporate Solutions</option>
+          <option value="Soluciones de Networking">Networking Solutions</option>
+          <option value="Soluciones End-User">End-User Solutions</option>
+          <option value="Servicios para equipos fuera de garantía">Out of warranty Solutions</option>
+        </select>
+        <span class="select-highlight"></span>
+        <span class="select-bar"></span>
+        <label class="select-label opensans-semibold">Solution</label>
+      </div>
+      <div class="material-container">
+        <label class="material-label opensans-semibold" for="message">Message</label>
+        <input class="material-input opensans-semibold" type="text" name="message" id="message">
+      </div>
+      <div class="contact-form-button-container">
+        <button class="sic-button barlow-bold fs-13">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

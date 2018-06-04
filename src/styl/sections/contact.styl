@@ -1,0 +1,132 @@
+.contact
+  background-image url("../img/backgrounds/bg-contact.png")
+  background-position bottom left
+  background-repeat no-repeat
+  background-size cover
+  padding 194px 0 0 0
+
+  &-form
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    margin-top 110px
+
+    &-container
+      margin 0 auto 255px auto
+      width 921px
+
+    &-column
+      margin-right 97px
+
+    &-button
+      &-container
+        margin-top 67px
+
+  &-footer
+    background-image url("../img/backgrounds/bg-footer-contact.jpg")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    height 202px
+    position relative
+
+  &-info
+    &-container
+      background-color $blueUltra
+      bottom 131px
+      display flex
+      flex-direction row
+      height 206px
+      justify-content center
+      left 0
+      margin 0 auto
+      padding-top 60px
+      position absolute
+      right 0
+      width 921px
+
+    &-column
+      margin 7px 130px 0 0
+
+    &-content
+      display flex
+      flex-direction row
+      margin-bottom 35px
+
+    &-address
+      &-container
+        width 278px
+
+  &-tel
+    letter-spacing 2px
+
+  &-email
+    letter-spacing 1.1px
+
+  &-address
+    letter-spacing 0.3px
+    line-height 27px
+
+  &-icon
+    &-container
+      align-items center
+      display flex
+      height 14px
+      justify-content center
+      margin-right 16px
+      width 14px
+
+    &-tel
+      height 13px
+      width 8px
+
+    &-mail
+      height 9px
+      width 12px
+
+    &-pin
+      height 14px
+      margin-top 8px
+      width 10px
+
+@media screen and (min-width 690px) and (max-width 970px)
+  .contact
+    &-form
+      &-container
+        width 645px
+
+      &-column
+        margin-right 45px
+
+    &-info
+      &-container
+        width 645px
+
+      &-column
+        margin-right 25px
+
+@media screen and (max-width 689px)
+  .contact
+    padding-top 110px
+
+    &-form
+      margin-top 45px
+
+      &-container
+        width 250px
+
+    &-info
+      &-container
+        align-items center
+        bottom 70px
+        height auto
+        flex-direction column
+        width 300px
+
+      &-column
+        margin-right 0
+
+      &-address
+        &-container
+          width 196px
+  

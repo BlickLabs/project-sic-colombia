@@ -1,0 +1,80 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+<title>SIC | Contact us</title>
+{% endblock %}
+
+{% block content %}
+<div class="contact">
+  <div class="contact-form-container">
+    <div>
+      <h1 class="fs-39 barlow-light">Contact us</h1>
+    </div>
+    <form class="contact-form" name="sic-contact-form-en" method="post" action="http://integrations.blick.mx/sic/contact/form/">
+      <div class="contact-form-column">
+        <div class="material-container">
+          <label class="material-label opensans-semibold" for="name">Name</label>
+          <input class="material-input opensans-semibold" type="text" name="name" id="name" required>
+        </div>
+        <div class="material-container">
+          <label class="material-label opensans-semibold" for="email">Email</label>
+          <input class="material-input opensans-semibold" type="email" name="email" id="email" required>
+        </div>
+      </div>
+      <div>
+        <div class="material-container">
+          <label class="material-label opensans-semibold" for="telephone">Phone</label>
+          <input class="material-input opensans-semibold" type="tel" name="phone" id="telephone">
+        </div>
+        <div class="material-container">
+          <label class="material-label opensans-semibold" for="message">Message</label>
+          <input class="material-input opensans-semibold" type="text" name="message" id="message">
+        </div>
+      </div>
+      <div class="contact-form-button-container">
+        <button class="sic-button barlow-bold fs-13">Send</button>
+      </div>
+    </form>
+  </div>
+  <div class="contact-footer">
+    <div class="contact-info-container">
+      <div class="contact-info-column">
+        <div class="anchor-phone-desktop">
+          <div class="contact-info-content">
+            <div class="contact-icon-container">
+              <img class="contact-icon-tel" src="img/icons/icon-telephone.png">
+            </div>
+            <span class="fs-14 barlow-semibold contact-tel">52.55 5366.0900</span>
+          </div>
+        </div>
+        <a href="tel:+52 55 53 66 09 00" class="anchor-phone-mobile">
+          <div class="contact-info-content">
+            <div class="contact-icon-container">
+              <img class="contact-icon-tel" src="img/icons/icon-telephone.png">
+            </div>
+            <span class="fs-14 barlow-semibold contact-tel">52.55 5366.0900</span>
+          </div>
+        </a>
+        <a href="mailto:atencionaclientes@sic.com.mx">
+          <div class="contact-info-content">
+            <div class="contact-icon-container">
+              <img class="contact-icon-mail" src="img/icons/icon-mail.png">
+            </div>
+            <span class="fs-14 barlow-semibold contact-email">atencionaclientes@sic.com.mx</span>
+          </div>
+        </a>
+      </div>
+      <a href="https://goo.gl/maps/Z2eP49xMRPC2" target="_blank">
+        <div class="contact-info-content">
+          <div class="contact-icon-container">
+            <img class="contact-icon-pin" src="img/icons/icon-pin.png">
+          </div>
+          <div class="contact-info-address-container">
+            <span class="fs-14 barlow-semibold contact-address">Av. Presidente Juárez No. 126 Col. San Jerónimo Tepetlacalco Tlalnepantla de Baz, Edo de Mex. CP. 54090</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,362 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+<title>SIC | Coverage</title>
+{% endblock %}
+
+{% block content %}
+  <div class="where">
+    <div class="where-locations-container">
+      <div class="where-locations-content">
+        <div class="where-title-container">
+          <h1 class="fs-39 barlow-light">Coverage</h1>
+        </div>
+        <div class="where-locations-info">
+          <div class="where-pins-container">
+            <div class="where-locations-title-container">
+              <h2 class="where-locations-title opensans-regular">Our points of sale</h2>
+            </div>
+            <div class="where-locations-pins-container">
+              <div class="where-locations-pins" id="changeCdmx">
+                <div class="where-locations-icon-container">
+                  <img class="where-icon" src="img/icons/icon-location.png">
+                </div>
+                <span class="fs-16 opensans-regular">CDMX</span>
+              </div>
+              <div class="where-locations-pins"  id="changeBogota">
+                <div class="where-locations-icon-container">
+                  <img class="where-icon" src="img/icons/icon-location.png">
+                </div>
+                <span class="fs-16 opensans-regular">Bogotá</span>
+              </div>
+              <div class="where-locations-pins" id="changeEdomex">
+                <div class="where-locations-icon-container">
+                  <img class="where-icon" src="img/icons/icon-location.png">
+                </div>
+                <span class="fs-16 opensans-regular">Estado de México</span>
+              </div>
+              <div class="where-locations-pins" id="changeMedellin">
+                <div class="where-locations-icon-container">
+                  <img class="where-icon" src="img/icons/icon-location.png">
+                </div>
+                <span class="fs-16 opensans-regular">Medellín</span>
+              </div>
+              <div class="where-locations-pins" id="changeGuadalajara">
+                <div class="where-locations-icon-container">
+                  <img class="where-icon" src="img/icons/icon-location.png">
+                </div>
+                <span class="fs-16 opensans-regular">Guadalajara</span>
+              </div>
+              <div class="where-locations-pins" id="changeSantiago">
+                <div class="where-locations-icon-container">
+                  <img class="where-icon" src="img/icons/icon-location.png">
+                </div>
+                <span class="fs-16 opensans-regular">Santiago</span>
+              </div>
+              <div class="where-locations-pins" id="changeMonterrey">
+                <div class="where-locations-icon-container">
+                  <img class="where-icon" src="img/icons/icon-location.png">
+                </div>
+                <span class="fs-16 opensans-regular">Monterrey</span>
+              </div>
+              <div class="where-locations-pins"  id="changeBuenosAires">
+                <div class="where-locations-icon-container">
+                  <img class="where-icon" src="img/icons/icon-location.png">
+                </div>
+                <span class="fs-16 opensans-regular">Buenos Aires</span>
+              </div>
+            </div>
+            
+            <div class="where-pins-carousel-mobile owl-carousel">
+              <div>
+                <div class="where-locations-pins" id="changeCdmx">
+                  <div class="where-locations-icon-container">
+                    <img class="where-icon" src="img/icons/icon-location.png">
+                  </div>
+                  <span class="fs-16 opensans-regular">CDMX</span>
+                </div>
+                <div class="where-locations-pins" id="changeEdomex">
+                  <div class="where-locations-icon-container">
+                    <img class="where-icon" src="img/icons/icon-location.png">
+                  </div>
+                  <span class="fs-16 opensans-regular">Estado de México</span>
+                </div>
+                <div class="where-locations-pins" id="changeGuadalajara">
+                  <div class="where-locations-icon-container">
+                    <img class="where-icon" src="img/icons/icon-location.png">
+                  </div>
+                  <span class="fs-16 opensans-regular">Guadalajara</span>
+                </div>
+                <div class="where-locations-pins" id="changeMonterrey">
+                  <div class="where-locations-icon-container">
+                    <img class="where-icon" src="img/icons/icon-location.png">
+                  </div>
+                  <span class="fs-16 opensans-regular">Monterrey</span>
+                </div>
+              </div>
+              <div>
+                <div class="where-locations-pins" id="changeBogota">
+                  <div class="where-locations-icon-container">
+                    <img class="where-icon" src="img/icons/icon-location.png">
+                  </div>
+                  <span class="fs-16 opensans-regular">Bogotá</span>
+                </div>
+                <div class="where-locations-pins" id="changeMedellin">
+                  <div class="where-locations-icon-container">
+                    <img class="where-icon" src="img/icons/icon-location.png">
+                  </div>
+                  <span class="fs-16 opensans-regular">Medellín</span>
+                </div>
+                <div class="where-locations-pins" id="changeSantiago">
+                  <div class="where-locations-icon-container">
+                    <img class="where-icon" src="img/icons/icon-location.png">
+                  </div>
+                  <span class="fs-16 opensans-regular">Santiago</span>
+                </div>
+                <div class="where-locations-pins"  id="changeBuenosAires">
+                  <div class="where-locations-icon-container">
+                    <img class="where-icon" src="img/icons/icon-location.png">
+                  </div>
+                  <span class="fs-16 opensans-regular">Buenos Aires</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="where-map-container">
+            <iframe class="where-map" id="iframeLocations" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.623677498308!2d-99.17814248452544!3d19.4286591868866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4cfe7355c1%3A0xebffe2f26ef25fcb!2sCalle+Milton+20%2C+Anzures%2C+11590+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses-419!2smx!4v1526590631258" width="625" height="385" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="where-locations-button-container">
+          <a href="http://www.dell.com/support/home/mx/es/mxbsdt1?~ck=mn" target="_blank">
+            <button class="sic-button barlow-bold fs-13">Dell Support</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="where-carousel-container">
+      <div class="where-carousel owl-carousel">
+        <div class="where-card-container">
+          <div class="where-card">
+            <div class="where-card-title-container">
+              <h3 class="barlow-medium">México</h3>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <div class="where-card-location-container">
+                  <span class="where-card-location opensans-regular">Matriz</span>
+                </div>
+                <span class="where-card-address opensans-regular">Av. Presidente Juárez 126 Col. San Jerónimo Tepetlacalco Tlalnepantla Edo. De México.</span>
+              </div>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <span class="where-card-address opensans-regular">Cerrada Tajín No. 93, Santa Cruz Atoyac Delegación Benito Juárez.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="where-card">
+            <div class="where-card-title-container">
+              <h3 class="barlow-medium">Colombia</h3>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <div class="where-card-location-container">
+                  <span class="where-card-location opensans-regular">Bogotá</span>
+                </div>
+                <span class="where-card-address opensans-regular">Carrera 16 A No. 80 – 79. El Lago Gaitan Bogotá, Cundinamarca. Colombia.</span>
+              </div>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <div class="where-card-location-container">
+                  <span class="where-card-location opensans-regular">Medellín</span>
+                </div>
+                <span class="where-card-address opensans-regular">Carrera 43 No.10-02 Local 01 El Poblado. Medellín, Antioquia . Colombia.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="where-card-container">
+          <div class="where-card">
+            <div class="where-card-title-container">
+              <h3 class="barlow-medium">Chile</h3>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <span class="where-card-address opensans-regular">Seminario #263. Esquina Jofré. Providencia.</span>
+              </div>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <div class="where-card-location-container">
+                  <span class="where-card-location opensans-regular">Providencia</span>
+                </div>
+                <span class="where-card-address opensans-regular">Santiago, Región Metropolitana. Chile.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="where-card">
+            <div class="where-card-title-container">
+              <h3 class="barlow-medium">Argentina</h3>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <span class="where-card-address opensans-regular">Av. Rivadavia 1345.</span>
+              </div>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <div class="where-card-location-container">
+                  <span class="where-card-location opensans-regular">Barrio Congreso</span>
+                </div>
+                <span class="where-card-address opensans-regular">Buenos Aires, Buenos Aires. Argentina.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="where-carousel-mobile owl-carousel">
+        <!-- <div class="where-card-container"> -->
+          <div class="where-card">
+            <div class="where-card-title-container">
+              <h3 class="barlow-medium">México</h3>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <div class="where-card-location-container">
+                  <span class="where-card-location opensans-regular">Matriz</span>
+                </div>
+                <span class="where-card-address opensans-regular">Av. Presidente Juárez 126 Col. San Jerónimo Tepetlacalco Tlalnepantla Edo. De México.</span>
+              </div>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <span class="where-card-address opensans-regular">Cerrada Tajín No. 93, Santa Cruz Atoyac Delegación Benito Juárez.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="where-card">
+            <div class="where-card-title-container">
+              <h3 class="barlow-medium">Colombia</h3>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <div class="where-card-location-container">
+                  <span class="where-card-location opensans-regular">Bogotá</span>
+                </div>
+                <span class="where-card-address opensans-regular">Carrera 16 A No. 80 – 79. El Lago Gaitan Bogotá, Cundinamarca. Colombia.</span>
+              </div>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <div class="where-card-location-container">
+                  <span class="where-card-location opensans-regular">Medellín</span>
+                </div>
+                <span class="where-card-address opensans-regular">Carrera 43 No.10-02 Local 01 El Poblado. Medellín, Antioquia . Colombia.</span>
+              </div>
+            </div>
+          </div>
+        <!-- </div> -->
+
+        <!-- <div class="where-card-container"> -->
+          <div class="where-card">
+            <div class="where-card-title-container">
+              <h3 class="barlow-medium">Chile</h3>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <span class="where-card-address opensans-regular">Seminario #263. Esquina Jofré. Providencia.</span>
+              </div>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <div class="where-card-location-container">
+                  <span class="where-card-location opensans-regular">Providencia</span>
+                </div>
+                <span class="where-card-address opensans-regular">Santiago, Región Metropolitana. Chile.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="where-card">
+            <div class="where-card-title-container">
+              <h3 class="barlow-medium">Argentina</h3>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <span class="where-card-address opensans-regular">Av. Rivadavia 1345.</span>
+              </div>
+            </div>
+            <div class="where-card-pin-container">
+              <div class="where-icon-container">
+                <img class="where-icon" src="img/icons/icon-location.png">
+              </div>
+              <div class="where-card-address-container">
+                <div class="where-card-location-container">
+                  <span class="where-card-location opensans-regular">Barrio Congreso</span>
+                </div>
+                <span class="where-card-address opensans-regular">Buenos Aires, Buenos Aires. Argentina.</span>
+              </div>
+            </div>
+          </div>
+        <!-- </div> -->
+      </div>
+      <div class="where-button-container">
+        <a href="contact-us-en.html">
+          <button class="sic-button barlow-bold fs-13">Contact us</button>
+        </a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

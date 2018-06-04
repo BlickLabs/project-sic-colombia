@@ -1,0 +1,225 @@
+.solutions
+  background-image url("../img/backgrounds/bg-solutions.jpg")
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  height 750px
+  margin 107px 0 0 0
+
+  &-content
+    display flex
+    flex-direction row
+    min-height 547px
+    margin-left 150px
+    padding-top 98px
+
+  &-title
+    &-container
+      margin 47px 57px 0 0
+      min-width 320px
+
+      & h1
+        color $white
+
+  &-card
+    background-color $white
+    display flex
+    flex-direction row
+    height 547px
+    padding 68px 94px
+    width 816px
+
+    &-title
+      &-container
+        margin 39px 0
+
+    &-ul
+      padding-left 0
+
+      & li
+        color #b3b3b3
+        font-size 13px
+        letter-spacing -0.1px
+        line-height 17px
+        list-style none
+        padding-bottom 10px
+        position relative
+
+        &:before
+          background-color $blue
+          border-radius 100px
+          content ""
+          height 5px
+          left -14px
+          position absolute
+          top 6px
+          width 5px
+
+    &-column
+      width 50%
+
+    &-separator
+      background-color #dfdfdf
+      height 100%
+      width 1px
+
+      &-container
+        margin 0 64px 0 40px
+
+  &-icon
+    &-enterprise
+      height 44px
+      width 41px !important
+
+    &-endservice
+      height 41px
+      width 43px !important
+
+  &-carousel
+    display block
+    width 816px
+
+    &-mobile
+      display none !important
+
+  &-navigation
+    &-icon
+      height 16px
+      width 9px
+
+    &-controls
+      position relative
+
+      & .owl-nav
+        bottom 27px
+        position absolute
+        right -35px
+
+      & .owl-dots
+        bottom 38px
+        left 89px
+        right initial
+
+      & .owl-prev,
+      & .owl-next
+        align-items center
+        background-color $blueUltra !important
+        border-radius 100px
+        bottom 0
+        display flex
+        height 69px
+        justify-content center
+        position absolute
+        right 0
+        width 69px
+
+      & .owl-prev.disabled,
+      & .owl-next.disabled
+        display none
+
+      & .owl-dot.active,
+      & .owl-dot
+        border-radius 100px
+        height 8px
+        width 8px
+
+      & .owl-dot.active
+        background-color $blue !important
+
+      & .owl-dot
+        background-color $white !important
+        border solid 1px $blue !important
+
+@media screen and (min-width 1320px) and (max-width 1420px)
+  .solutions
+    &-content
+      margin-left 50px
+
+@media screen and (min-width 940px) and (max-width 1319px)
+  .solutions
+    height auto
+
+    &-content
+      flex-direction column
+      margin-left 50px
+      padding 30px 0 60px 0
+
+    &-title
+      &-container
+        margin-bottom 40px
+
+@media screen and (max-width 939px)
+  .solutions
+    background-position left
+    height auto
+
+    &-content
+      align-items center
+      flex-direction column
+      margin-left 0
+      padding 30px 0 60px 0
+
+    &-title
+      &-container
+        margin 0 0 40px 0
+
+    &-carousel
+      display none !important
+
+      &-mobile
+        display block !important
+        width 340px
+
+    &-card
+      padding 40px
+      width 340px
+
+      &-column
+        width 100%
+
+      &-separator
+        &-container
+          display none
+
+    &-navigation
+      &-controls
+
+        & .owl-nav
+          bottom -23px
+          right 35px
+
+        & .owl-dots
+          left 38px
+
+        & .owl-prev,
+        & .owl-next
+          height 50px
+          width 50px
+
+        & .owl-prev
+          right 40px
+
+        & .owl-next
+          left -25px
+          right initial
+
+@media screen and (max-width 768px)
+  .solutions
+    margin-top 70px
+
+@media screen and (max-width 460px)
+  .solutions
+    background-image url("../img/backgrounds/bg-solutions-mobile.jpg")
+    background-position right -90px top
+
+    &-title
+      &-container
+        min-width 280px
+
+    &-carousel
+
+      &-mobile
+        width 280px
+
+    &-card
+      width 280px

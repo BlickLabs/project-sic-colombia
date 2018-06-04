@@ -1,0 +1,182 @@
+<nav class="navbar {% if section != 'index' %} navbar-scroll {% endif %}">
+  <a href="index.html">
+    <div class="navbar-logo-container">
+      <img class="navbar-logo" src="img/logos/logo-white.png" alt="Sic navbar logo">
+      <img class="navbar-logo-scroll {% if section != 'index' %} show-icon {% endif %}" src="img/logos/logo-blue.png" alt="Sic navbar logo blue">
+    </div>
+  </a>
+  <div class="navbar-sections-container">
+    <div class="navbar-sections-content">
+      <button class="barlow-bold fs-14 navbar-sections-title open-dropdown {% if section != 'index' %} navbar-sections-scroll {% endif %} {% if section == 'quienes-somos' or section == 'reconocimientos' %} active-link {% endif %}" onclick="myFunction()">EMPRESA
+        <div class="navbar-dropdown-icon-container">
+          <img class="navbar-dropdown-icon" src="img/icons/icon-dropdown.png">
+          <img class="navbar-dropdown-icon-scroll {% if section != 'index' %} show-icon {% endif %}" src="img/icons/icon-dropdown-blue.png">
+        </div>
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="quienes-somos.html">
+          <span class="barlow-bold fs-14">QUIÉNES SOMOS</span>
+        </a>
+        <a href="reconocimientos.html">
+          <span class="barlow-bold fs-14">RECONOCIMIENTOS</span>
+        </a>
+      </div>
+    </div>
+    <div class="navbar-sections-content">
+      <a href="soluciones.html">
+        <span class="barlow-bold fs-14 navbar-sections-title {% if section != 'index' %} navbar-sections-scroll {% endif %} {% if section == 'soluciones' %} active-link {% endif %}">SOLUCIONES</span>
+      </a>
+    </div>
+    <div class="navbar-sections-content">
+      <button class="barlow-bold fs-14 navbar-sections-title open-dropdown {% if section != 'index' %} navbar-sections-scroll {% endif %} {% if section == 'donde-estamos' or section == 'contacto' %} active-link {% endif %}" onclick="myFunction2()">CONTACTO
+        <div class="navbar-dropdown-icon-container">
+          <img class="navbar-dropdown-icon" src="img/icons/icon-dropdown.png">
+          <img class="navbar-dropdown-icon-scroll  {% if section != 'index' %} show-icon {% endif %}" src="img/icons/icon-dropdown-blue.png">
+        </div>
+      </button>
+      <div id="myDropdown2" class="dropdown-content">
+        <a href="donde-estamos.html">
+          <span class="barlow-bold fs-14">DÓNDE ESTAMOS</span>
+        </a>
+        <a href="contacto.html">
+          <span class="barlow-bold fs-14">CONTÁCTANOS</span>
+        </a>
+      </div>
+    </div>
+    <div class="navbar-sections-content">
+      <a href="cotiza.html">
+        <span class="barlow-bold fs-14 navbar-sections-title {% if section != 'index' %} navbar-sections-scroll {% endif %} {% if section == 'cotiza' %} active-link {% endif %}">COTIZA</span>
+      </a>
+    </div>
+    <div class="navbar-separator"></div>
+    <div class="navbar-lang-container">
+      <div class="navbar-lang-content">
+        <a href="{% if section == 'index-en' %} index.html {% elif section == 'policy-privacy' %} aviso-de-privacidad.html {% elif section == 'contact-us-en' %} contacto.html {% elif section == 'quote-en' %} cotiza.html {% elif section == 'office-locations-en' %} donde-estamos.html {% elif section == 'guarantee-en' %} garantias.html {% elif section == 'about-us-en' %} quienes-somos.html  {% elif section == 'awards-en' %} reconocimientos.html {% elif section == 'solutions-en' %} soluciones.html {% endif %}">
+          <span class="barlow-bold fs-14 navbar-sections-title {% if section != 'index' %} navbar-sections-scroll {% endif %}" style="{% if section == 'index' or section == 'aviso-de-privacidad' or section == 'contacto' or section == 'cotiza' or section == 'donde-estamos' or section == 'garantias' or section == 'quienes-somos' or section == 'reconocimientos' or section == 'soluciones' %} font-weight: bold; {% endif %}">ES</span>
+        </a>
+      </div>
+      <div class="navbar-lang-content">
+        <a href="{% if section == 'index' %} index-en.html {% elif section == 'aviso-de-privacidad' %} policy-privacy.html {% elif section == 'contacto' %} contact-us-en.html {% elif section == 'cotiza' %} quote-en.html {% elif section == 'donde-estamos' %} office-locations-en.html {% elif section == 'garantias' %} guarantee-en.html {% elif section == 'quienes-somos' %} about-us-en.html  {% elif section == 'reconocimientos' %} awards-en.html {% elif section == 'soluciones' %} solutions-en.html {% endif %}">
+          <span class="barlow-medium fs-14 navbar-sections-title {% if section != 'index' %} navbar-sections-scroll {% endif %}">EN</span>
+        </a>
+      </div>
+    </div>
+    <div class="navbar-flag-container">
+      <button class="barlow-bold fs-14 navbar-sections-title open-dropdown" onclick="myFunction3()">
+        <div class="navbar-flag-content">
+          <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-col.png">
+        </div>
+        <div class="navbar-dropdown-icon-container">
+          <img class="navbar-dropdown-icon" src="img/icons/icon-dropdown.png">
+          <img class="navbar-dropdown-icon-scroll  {% if section != 'index' %} show-icon {% endif %}" src="img/icons/icon-dropdown-blue.png">
+        </div>
+      </button>
+      <div id="myDropdown3" class="dropdown-content">
+        <a href="">
+          <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-mx.png">
+        </a>
+        <a href="">
+          <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-arg.png">
+        </a>
+        <a href="">
+          <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-chi.png">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div data-attribute="" class="navbar-hamburguer-visibility"  id="hamburgerMenu">
+    <div class="navbar-hamburguer" data-attribute="">
+      <img class="navbar-hamburger-icon" src="img/icons/hamburger-menu.png" data-attribute="">
+      <img class="navbar-hamburger-icon-scroll {% if section != 'index' %} show-icon {% endif %}" src="img/icons/hamburger-menu-blue.png" data-attribute="">
+    </div>
+  </div>
+  <div class="hamburger-menu-container" id="menuContainer" data-attribute="">
+    <div class="hamburger-menu-header" data-attribute="">
+      <div class="" data-attribute="">
+        <a href="index.html" data-attribute="">
+          <img class="hamburger-logo" src="img/logos/logo-white.png" data-attribute="" alt="logo SIC hamburger">
+        </a>
+      </div>
+      <div class="hamburger-close-container" id="hideHamburger">
+        <img class="hamburger-close" src="img/icons/close-menu.png">
+      </div>
+    </div>
+    <div class="hamburger-menu-body" data-attribute="">
+      <div class="hamburger-separator"></div>
+      <div class="navbar-sections-content" data-attribute="">
+        <span class="barlow-bold fs-14 open-dropdown {% if section == 'quienes-somos' or section == 'reconocimientos' %} active-link {% endif %}" onclick="myFunctionHamburger()" data-attribute="">EMPRESA</span>
+        <div class="navbar-dropdown-icon-container">
+          <img class="navbar-dropdown-icon-mobile" src="img/icons/icon-dropdown.png" data-attribute="">
+        </div>
+        <div id="myDropdownHamburger" class="dropdown-content">
+          <a href="quienes-somos.html">
+            <span class="barlow-bold fs-14">QUIÉNES SOMOS</span>
+          </a>
+          <a href="reconocimientos.html">
+            <span class="barlow-bold fs-14">RECONOCIMIENTOS</span>
+          </a>
+        </div>
+      </div>
+      <div class="hamburger-separator"></div>
+      <div class="navbar-sections-content" data-attribute="">
+        <a href="soluciones.html" data-attribute="">
+          <span class="barlow-bold fs-14 {% if section == 'soluciones' %} active-link {% endif %}">SOLUCIONES</span>
+        </a>
+      </div>
+      <div class="hamburger-separator"></div>
+      <div class="navbar-sections-content" data-attribute="">
+        <span class="barlow-bold fs-14 open-dropdown {% if section == 'donde-estamos' or section == 'contacto' %} active-link {% endif %}" onclick="myFunction2Hamburger()" data-attribute="">CONTACTO</span>
+        <div class="navbar-dropdown-icon-container">
+          <img class="navbar-dropdown-icon-mobile" src="img/icons/icon-dropdown.png" data-attribute="">
+        </div>
+        <div id="myDropdown2Hamburger" class="dropdown-content">
+          <a href="donde-estamos.html">
+            <span class="barlow-bold fs-14">DÓNDE ESTAMOS</span>
+          </a>
+          <a href="contacto.html">
+            <span class="barlow-bold fs-14">CONTÁCTANOS</span>
+          </a>
+        </div>
+      </div>
+      <div class="hamburger-separator"></div>
+      <div class="navbar-sections-content" data-attribute="">
+        <a href="cotiza.html" data-attribute="">
+          <span class="barlow-bold fs-14 {% if section == 'cotiza' %} active-link {% endif %}">COTIZA</span>
+        </a>
+      </div>
+      <div class="hamburger-separator"></div>
+      <div class="navbar-lang-container" data-attribute="">
+        <div class="navbar-lang-content" data-attribute="">
+          <a href="{% if section == 'index-en' %} index.html {% elif section == 'policy-privacy' %} aviso-de-privacidad.html {% elif section == 'contact-us-en' %} contacto.html {% elif section == 'quote-en' %} cotiza.html {% elif section == 'office-locations-en' %} donde-estamos.html {% elif section == 'guarantee-en' %} garantias.html {% elif section == 'about-us-en' %} quienes-somos.html  {% elif section == 'awards-en' %} reconocimientos.html {% elif section == 'solutions-en' %} soluciones.html {% endif %}" data-attribute="">
+            <span class="barlow-bold fs-14" style="{% if section == 'index' or section == 'aviso-de-privacidad' or section == 'contacto' or section == 'cotiza' or section == 'donde-estamos' or section == 'garantias' or section == 'quienes-somos' or section == 'reconocimientos' or section == 'soluciones' %} font-weight: bold; {% endif %}">ES</span>
+          </a>
+        </div>
+        <div class="navbar-lang-content" data-attribute="">
+          <a href="{% if section == 'index' %} index-en.html {% elif section == 'aviso-de-privacidad' %} policy-privacy.html {% elif section == 'contacto' %} contact-us-en.html {% elif section == 'cotiza' %} quote-en.html {% elif section == 'donde-estamos' %} office-locations-en.html {% elif section == 'garantias' %} guarantee-en.html {% elif section == 'quienes-somos-en' %} about-us-en.html  {% elif section == 'reconocimientos' %} awards-en.html {% elif section == 'soluciones' %} solutions-en.html {% endif %}" data-attribute="">
+            <span class="barlow-medium fs-14">EN</span>
+          </a>
+        </div>
+      </div>
+      <div class="navbar-flag-container" data-attribute="">
+        <div class="navbar-flag-content">
+          <img class="navbar-flag open-dropdown" src="img/icons/icon-flag-col.png" onclick="myFunction3Hamburger()" data-attribute="">
+        </div>
+        <div class="navbar-dropdown-icon-container">
+          <img class="navbar-dropdown-icon-mobile" src="img/icons/icon-dropdown.png" data-attribute="">
+        </div>
+        <div id="myDropdown3Hamburger" class="dropdown-content">
+          <a href="">
+            <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-mx.png">
+          </a>
+          <a href="">
+            <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-arg.png">
+          </a>
+          <a href="">
+            <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-chi.png">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
