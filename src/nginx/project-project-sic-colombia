@@ -2,7 +2,7 @@ server {
   listen 80;
   listen [::]:80;
 
-  root /home/static/project-sic-col;
+  root /home/static/project-sic-colombia;
   index index.html index.htm;
 
   server_name sandbox.sic-col.getmore.mx;
