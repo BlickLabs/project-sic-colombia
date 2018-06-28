@@ -47,7 +47,12 @@
         display none
 
   &-view
+    display flex
+    flex-direction column
     margin-top 45px
+
+    & a
+      margin-bottom 10px
 
     & a:hover span
       color #3b79d1
@@ -62,6 +67,20 @@
       & span
         letter-spacing 0.9px
         text-transform uppercase
+
+  &-social
+    margin-top 45px
+
+    &-mobile
+      display none
+
+    & a:nth-child(1)
+      margin-right 20px
+      
+
+    &-icon
+      height 26px
+      width 26px
 
   &-separator
     background-color $white
@@ -169,6 +188,15 @@
 
       &-link
         margin 0 7px 12px 7px
+
+    &-social
+      display none
+
+      &-mobile
+        display block
+
+        & a:nth-child(1)
+          margin-right 20px
 
     &-separator
       height 1px
