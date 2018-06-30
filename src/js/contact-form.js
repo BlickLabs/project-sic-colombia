@@ -9,7 +9,7 @@ $('form[name="sic-contact-form"]').validate({
    var data = $('form[name="sic-contact-form"]').serialize();
    console.log(data);
    $.ajax({
-     url: 'http://integrations.blick.mx/sic/contact/form/',
+     url: 'http://integrations.blick.mx/sic-co/contact/form/',
      method: 'POST',
      data: data
    }).done(function(data) {
@@ -38,7 +38,7 @@ $('form[name="sic-contact-form-en"]').validate({
    var data = $('form[name="sic-contact-form-en"]').serialize();
    console.log(data);
    $.ajax({
-     url: 'http://integrations.blick.mx/sic/contact/form/',
+     url: 'http://integrations.blick.mx/sic-co/contact/form/',
      method: 'POST',
      data: data
    }).done(function(data) {

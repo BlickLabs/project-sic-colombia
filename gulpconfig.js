@@ -2,7 +2,7 @@ var src = './src',
   dist = './dist',
   build = './build',
   bower = './bower_components',
-  package = 'project-sic';
+  package = 'project-sic-colombia';
 
 module.exports = {
   paths: {
@@ -54,7 +54,7 @@ module.exports = {
   },
   etc: {
     domain: '',
-    projectName: 'project-sic',
+    projectName: 'project-sic-colombia',
     formattedName: package
   }
 };

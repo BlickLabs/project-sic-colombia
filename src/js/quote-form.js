@@ -11,7 +11,7 @@ $('form[name="sic-quote-form"]').validate({
    var data = $('form[name="sic-quote-form"]').serialize();
    console.log(data);
    $.ajax({
-     url: 'http://integrations.blick.mx/sic/quote/form/',
+     url: 'http://integrations.blick.mx/sic-co/quote/form/',
      method: 'POST',
      data: data
    }).done(function(data) {
@@ -42,7 +42,7 @@ $('form[name="sic-quote-form-en"]').validate({
    var data = $('form[name="sic-quote-form-en"]').serialize();
    console.log(data);
    $.ajax({
-     url: 'http://integrations.blick.mx/sic/quote/form/',
+     url: 'http://integrations.blick.mx/sic-co/quote/form/',
      method: 'POST',
      data: data
    }).done(function(data) {
