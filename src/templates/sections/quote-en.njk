@@ -10,7 +10,7 @@
     <div class="quote-title-container">
       <h1 class="fs-39 barlow-light">Quote</h1>
     </div>
-    <form class="quote-form" name="sic-quote-form-en" method="post" action="http://integrations.blick.mx/sic-co/quote/form/">
+    <form class="quote-form" id="sic-quote-form-en" name="sic-quote-form-en" method="POST" enctype="multipart/form-data">
       <div class="material-container">
         <label class="material-label opensans-semibold" for="name">Name</label>
         <input class="material-input opensans-semibold" type="text" name="name" id="name" required>
@@ -22,10 +22,10 @@
       <div class="select">
         <select class="select-text opensans-semibold" type="text" name="company" required>
           <option value="" disabled selected></option>
-          <option value="Soluciones Corporativas">Corporate Solutions</option>
-          <option value="Soluciones de Networking">Networking Solutions</option>
-          <option value="Soluciones End-User">End-User Solutions</option>
-          <option value="Servicios para equipos fuera de garantía">Out of warranty Solutions</option>
+          <option value="Corporate Solutions">Corporate Solutions</option>
+          <option value="Networking Solutions">Networking Solutions</option>
+          <option value="End-User Solutions">End-User Solutions</option>
+          <option value="Out of warranty Solutions">Out of warranty Solutions</option>
         </select>
         <span class="select-highlight"></span>
         <span class="select-bar"></span>
