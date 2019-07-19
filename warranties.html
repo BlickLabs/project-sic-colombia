@@ -52,9 +52,26 @@
       </div>
     </div>
     <div class="navbar-sections-content">
-      <a href="solutions-en.html">
-        <span class="barlow-bold fs-14 navbar-sections-title  navbar-sections-scroll  ">SOLUTIONS</span>
-      </a>
+      <button class="barlow-bold fs-14 navbar-sections-title open-dropdown  navbar-sections-scroll  " onclick="functionDropdownSoluciones()">SOLUTIONS
+        <div class="navbar-dropdown-icon-container">
+          <img class="navbar-dropdown-icon" src="img/icons/icon-dropdown.png">
+          <img class="navbar-dropdown-icon-scroll  show-icon " src="img/icons/icon-dropdown-blue.png">
+        </div>
+      </button>
+      <div id="dropdownSoluciones" class="dropdown-content">
+        <a href="corporate-en.html">
+          <span class="barlow-bold fs-14">CORPORATE</span>
+        </a>
+        <a href="technical-service-en.html">
+          <span class="barlow-bold fs-14">TECHNICAL SERVICE</span>
+        </a>
+        <a href="networking-en.html">
+          <span class="barlow-bold fs-14">NETWORKING</span>
+        </a>
+        <a href="equipment-repair-en.html">
+          <span class="barlow-bold fs-14">EQUIPMENT REPAIR</span>
+        </a>
+      </div>
     </div>
     <div class="navbar-sections-content">
       <button class="barlow-bold fs-14 navbar-sections-title open-dropdown  navbar-sections-scroll  " onclick="myFunction2()">CONTACT US
@@ -149,9 +166,24 @@
       </div>
       <div class="hamburger-separator"></div>
       <div class="navbar-sections-content" data-attribute="">
-        <a href="solutions-en.html" data-attribute="">
-          <span class="barlow-bold fs-14 ">SOLUTIONS</span>
-        </a>
+        <span class="barlow-bold fs-14 open-dropdown  navbar-sections-scroll  " onclick="functionDropdownSolucionesHamburger()" data-attribute="">SOLUCIONES</span>
+        <div class="navbar-dropdown-icon-container">
+          <img class="navbar-dropdown-icon-mobile" src="img/icons/icon-dropdown.png" data-attribute="">
+        </div>
+        <div id="dropdownSolucionesHamburger" class="dropdown-content">
+          <a href="corporate-en.html">
+            <span class="barlow-bold fs-14">CORPORATE</span>
+          </a>
+          <a href="technical-service-en.html">
+            <span class="barlow-bold fs-14">TECHNICAL SERVICE</span>
+          </a>
+          <a href="networking-en.html">
+            <span class="barlow-bold fs-14">NETWORKING</span>
+          </a>
+          <a href="equipment-repair-en.html">
+            <span class="barlow-bold fs-14">EQUIPMENT REPAIR</span>
+          </a>
+        </div>
       </div>
       <div class="hamburger-separator"></div>
       <div class="navbar-sections-content" data-attribute="">
@@ -177,13 +209,13 @@
       <div class="hamburger-separator"></div>
       <div class="navbar-lang-container" data-attribute="">
         <div class="navbar-lang-content" data-attribute="">
-          <a href=" garantias.html " data-attribute="">
-            <span class="barlow-medium fs-14">ES</span>
+          <a href=" garantias.html ">
+            <span class="barlow-medium fs-14 navbar-sections-title  navbar-sections-scroll ">ES</span>
           </a>
         </div>
         <div class="navbar-lang-content" data-attribute="">
-          <a href="" data-attribute="">
-            <span class="barlow-bold fs-14" style="">EN</span>
+          <a href="">
+            <span class="barlow-bold fs-14 navbar-sections-title  navbar-sections-scroll " style="">EN</span>
           </a>
         </div>
       </div>
@@ -222,7 +254,7 @@
         <footer class="footer">
   <div class="footer-logo-container">
     <a href="index-en.html">
-      <img class="footer-logo" src="img/logos/logo-white.png">
+      <img class="footer-logo" src="img/icons/icon-iso-9001.png">
     </a>
   </div>
   <div class="footer-info">
@@ -247,7 +279,6 @@
           <a href="policy-privacy.html">
             <span class="barlow-medium fs-14  ">Privacy Policy</span>
           </a>
-          <span class="barlow-medium fs-14">Copyright® SIC 2018</span>
         </div>
       </div>
       <div class="footer-info-column">
@@ -266,14 +297,15 @@
             <span class="barlow-bold fs-14  ">get a quote</span>
           </a>
         </div>
-        <div class="footer-social">
-          <a href="https://www.facebook.com/ColombiaSic/" target="_blank">
+        <!-- <div class="footer-social">
+          <a href="https://www.facebook.com/LatAmSic/" target="_blank">
             <img class="footer-social-icon" src="img/icons/icon-fb-circle-white.png">
           </a>
           <a href="https://twitter.com/sicLatAm?lang=en" target="_blank">
             <img class="footer-social-icon" src="img/icons/icon-twitter-circle-white.png">
           </a>
-        </div>
+        </div> -->
+        <span class="barlow-medium fs-14" style="display: block; margin-top: 45px;">Copyright® SIC <script type="text/javascript">document.write(new Date().getFullYear());</script></span>
       </div>
     </div>
     <div class="footer-info-column-container-mobile">
@@ -342,21 +374,33 @@
           <span class="barlow-semibold fs-12">Carrera 16A No. 80 - 79, El Lago Gaitan, Bogotá, Cundinamarca</span>
         </a>
       </div>
+      <div class="footer-rs-container">
+        <a href="https://www.facebook.com/ColombiaSic/" target="_blank" class="icon-fb">
+          <svg id="Layer_1" data-name="Layer 1" viewBox="0 0 284.73 284.73">
+            <path class="cls-1" d="M158.21,284.73H99.31V142.36H69.87V93.29H99.31V63.84c0-40,16.62-63.84,63.82-63.84h39.31V49.07H177.88c-18.38,0-19.6,6.86-19.6,19.66l-.07,24.56h44.52l-5.21,49.07H158.21Z"/>
+          </svg>
+        </a>
+        <a href="https://twitter.com/sicLatAm/" target="_blank" class="icon-twitter">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+            <path class="cls-1" d="M300,57a123,123,0,0,1-35.35,9.69A61.71,61.71,0,0,0,291.71,32.6a123,123,0,0,1-39.08,14.93,61.6,61.6,0,0,0-104.88,56.14A174.68,174.68,0,0,1,20.89,39.36a61.61,61.61,0,0,0,19,82.18,61.24,61.24,0,0,1-27.87-7.7c0,.26,0,.51,0,.77A61.59,61.59,0,0,0,61.42,175,61.74,61.74,0,0,1,33.63,176a61.6,61.6,0,0,0,57.49,42.74,123.47,123.47,0,0,1-76.44,26.35A124.85,124.85,0,0,1,0,244.25,174.24,174.24,0,0,0,94.35,271.9c113.21,0,175.12-93.78,175.12-175.12q0-4-.18-8A125.21,125.21,0,0,0,300,57Z"/>
+          </svg>
+        </a>
+      </div>
     </div>
-    <div class="footer-social-mobile">
+    <!-- <div class="footer-social-mobile">
       <a href="https://www.facebook.com/ColombiaSic/" target="_blank">
         <img class="footer-social-icon" src="img/icons/icon-fb-circle-white.png">
       </a>
       <a href="https://twitter.com/sicLatAm?lang=en" target="_blank">
         <img class="footer-social-icon" src="img/icons/icon-twitter-circle-white.png">
       </a>
-    </div>
+    </div> -->
     <div class="footer-info-bottom-mobile">
       <a href="policy-privacy.html">
         <span class="barlow-medium fs-14  ">Privacy Policy</span>
       </a>
       <div class="footer-info-copyright">
-        <span class="barlow-medium fs-14">Copyright® SIC 2018</span>
+        <span class="barlow-medium fs-14">Copyright® SIC <script type="text/javascript">document.write(new Date().getFullYear());</script></span>
       </div>
     </div>
   </div>
