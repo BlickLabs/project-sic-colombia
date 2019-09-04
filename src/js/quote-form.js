@@ -25,7 +25,13 @@ $('form[name="sic-quote-form"]').validate({
       cache: false
     }).done(function() {
       document.getElementById('sic-quote-form').reset();
-      alertify.success('Se ha enviado el email. Gracias por contactarnos!');
+      // alertify.success('Se ha enviado el email. Gracias por contactarnos!');
+
+      setTimeout(function() {
+        // window.location.href = "/gracias.html";
+        var win = window.open("/gracias.html", '_blank');
+        win.focus();
+      }, 700)
     });
   },
   invalidHandler: function(event, validator) {
@@ -61,7 +67,11 @@ $('form[name="sic-quote-form-en"]').validate({
       cache: false
     }).done(function() {
       document.getElementById('sic-quote-form-en').reset();
-      alertify.success('The email has been sent. Thanks for contact us!');
+      // alertify.success('The email has been sent. Thanks for contact us!');
+      setTimeout(function() {
+        var win = window.open("/thank-you.html", '_blank');
+        win.focus();
+      }, 700)
     });
   },
   invalidHandler: function(event, validator) {

@@ -6,7 +6,7 @@ var navSeparator = document.querySelector('.navbar-separator');
 
 //navbar-fixed-top
 function doSomething(scroll_pos) {
-  if (window.location.pathname === '/index.html' || window.location.pathname === '/index-en.html' || window.location.pathname === '/' || window.location.pathname === '/project-sic-colombia/index.html' || window.location.pathname === '/project-sic-colombia/index-en.html' || window.location.pathname === '/project-sic-colombia/') {
+  if (window.location.pathname === '/index.html' || window.location.pathname === '/index-en.html' || window.location.pathname === '/' || window.location.pathname === '/project-sic/index.html' || window.location.pathname === '/project-sic/index-en.html' || window.location.pathname === '/project-sic/') {
     if (scroll_pos > 30) {
       siteNavbar.classList.add('navbar-scroll');
       $('.navbar-logo').removeClass('show-icon');

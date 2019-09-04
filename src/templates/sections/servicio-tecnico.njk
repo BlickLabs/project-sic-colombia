@@ -1,0 +1,47 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+<title>SIC | Técnico</title>
+{% endblock %}
+
+{% block content %}
+<section class="soluciones">
+  <section class="cover tecnico">
+    <h1 class="cover-title barlow-medium">Servicio Técnico</h1>
+    <p class="cover-description opensans-regular servicioTecnicoCover">Reparación en sitio a equipos de cómputo y periféricos o en centro de servicios autorizados.</p>
+    <a href="cotiza.html">
+      <button class="sic-button barlow-bold fs-13">cotiza</button>
+    </a>
+  </section>
+
+  <section class="card-container">
+    <div class="card">
+      <div class="card-info">
+        <img class="card-icon iconoTecnico" src="img/icons/icono-servicio-tecnico.png" alt="Ícono servicio técnico">
+        <h2 class="card-title opensans-semibold">Atención de garantía en Sitio</h2>
+        <p class="card-description opensans-semibold">Reparación en sitio a equipos de cómputo y periféricos  previamente diagnosticados brindando una solución gracias a nuestros técnicos certificados.</p>
+      </div>
+      <div class="card-img-container">
+        <img class="card-img" src="img/soluciones/garantia-sitio-3x.jpg" alt="Atención de garantía en Sitio">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-info">
+        <img class="card-icon iconoRenovacion" src="img/icons/icono-global.png" alt="Ícono global">
+        <h2 class="card-title opensans-semibold">Atención de garantías en Centros de Servicio</h2>
+        <p class="card-description opensans-semibold">Reparación a equipos de cómputo y periféricos en Centros Autorizados de Servicio, contando con más de 20 a nivel nacional y 70 en LATAM.</p>
+      </div>
+      <div class="card-img-container">
+        <img class="card-img" src="img/soluciones/garantia-centro-3x.jpg" alt="Atención de garantías en Centros de Servicio">
+      </div>
+    </div>
+
+    <div class="card-btnContainer">
+      <a href="cotiza.html">
+        <button class="sic-button barlow-bold fs-13">cotiza</button>
+      </a>
+    </div>
+  </section>
+</section>
+{% endblock %}

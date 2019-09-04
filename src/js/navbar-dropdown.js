@@ -2,6 +2,10 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function functionDropdownSoluciones() {
+  document.getElementById("dropdownSoluciones").classList.toggle("show");
+}
+
 function myFunction2() {
   document.getElementById("myDropdown2").classList.toggle("show");
 }
@@ -12,6 +16,10 @@ function myFunction3() {
 
 function myFunctionHamburger() {
   document.getElementById("myDropdownHamburger").classList.toggle("show");
+}
+
+function functionDropdownSolucionesHamburger() {
+  document.getElementById("dropdownSolucionesHamburger").classList.toggle("show");
 }
 
 function myFunction2Hamburger() {

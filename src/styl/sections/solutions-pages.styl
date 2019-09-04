@@ -1,0 +1,164 @@
+.soluciones
+  & .cover
+    align-items center
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    display flex
+    flex-direction column
+    height 591px
+    justify-content center
+    margin-top 107px
+
+    &.corporativo
+      background-image url("../img/backgrounds/corporativo-cover.jpg")
+
+    &.tecnico
+      background-image url("../img/backgrounds/servicio-tecnico-cover.jpg")
+
+    &.redes
+      background-image url("../img/backgrounds/redes-cover.jpg")
+
+    &.reparacion
+      background-image url("../img/backgrounds/reparacion-equipo-cover.jpg")
+
+    &-title
+      color #ffffff
+      font-size 68px
+      letter-spacing -1.4px
+      line-height 53px
+      text-align center
+
+    &-description
+      color #ffffff
+      font-size 20px
+      letter-spacing 0.2px
+      line-height 30px
+      margin 70px 0 40px 0
+      max-width 527px
+      text-align center
+
+      &.servicioTecnicoCover
+        max-width 460px
+
+  & .card
+    display flex
+    margin 67px auto 0 auto
+    max-width 981px
+
+    &-container
+      margin 5px 0 41px 0
+      padding 0 30px
+
+    &:nth-child(even)
+      flex-direction row-reverse
+
+    &:nth-child(even) .card-info
+      padding-left 93px
+
+    &:nth-child(odd) .card-info
+      padding-left 23px
+      padding-right 84px
+
+    &-info
+      display flex
+      flex-direction column
+      justify-content center
+
+      & .icono
+        &Corporativo
+          height 47px
+          width 53px
+
+        &Renovacion
+          height 44px
+          width 41px
+
+        &Tecnico
+          height 51px
+          width 39px
+
+        &Reparacion
+          height 47px
+          width 41px
+
+    &-title
+      color #555555
+      font-size 30px
+      letter-spacing -0.2px
+      line-height 32px
+      margin 26px 0 30px 0
+
+    &-description
+      color #555555
+      font-size 16px
+      letter-spacing -0.1px
+      line-height 33px
+
+    &-img
+      height 438px
+      width 460px
+
+    &-btnContainer
+      margin-top 42px
+      text-align center
+
+@media screen and (max-width 960px)
+  .soluciones
+    & .card
+      &:nth-child(odd) .card-info
+        padding-left 0
+        padding-right 30px
+
+      &:nth-child(even) .card-info
+        padding-left 30px
+
+      &-info,
+      &-img-container
+        width 50%
+
+      &-img
+        min-width 320px
+        object-fit cover
+        width 100%
+
+@media screen and (max-width 768px)
+  .soluciones .cover
+    margin-top 70px
+
+@media screen and (max-width 749px)
+  .soluciones
+    & .card
+      flex-direction column !important
+
+      &-img-container
+      &-info
+        width 100%
+
+      &-img
+        object-position top
+
+        &-container
+          margin-top 35px
+
+      &-info
+        padding 30px 0 0 0 !important
+
+@media screen and (max-width 420px)
+  .soluciones
+    & .cover
+      height 490px
+      padding 0 30px
+
+      &-title
+        font-size 50px
+
+    & .card
+      &-container
+        padding 0
+
+      &-img
+        height 280px
+
+      &-info
+        padding 30px 30px 0 30px !important

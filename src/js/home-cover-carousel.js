@@ -175,7 +175,7 @@ homeCoverCarousel
 .owlCarousel ({
   loop: true,
   nav: false,
-  dots: false,
+  dots: true,
   mouseDrag: false,
   touchDrag: false,
   smartSpeed: 1500,
