@@ -1,0 +1,42 @@
+
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+<title>SIC | Thanks for contact us!</title>
+{% endblock %}
+  
+{% block content %}
+  <section class="thankYou">
+    <h1 class="barlow-light">The email has been sent.<br>Thanks for contact us!</h1>
+  </section>
+
+  <style>
+    .thankYou {
+      align-items: center;
+      display: flex;
+      height: 400px;
+      justify-content: center;
+      margin-top: 107px;
+    }
+
+    .thankYou h1 {
+      color: #3e3e3e;
+      font-size: 48px;
+      letter-spacing: -1px;
+      line-height: 53px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      .thankYou {
+        height: 320px;
+        margin-top: 70px;
+      }
+
+      .thankYou h1 {
+        font-size: 27px;
+        line-height: 32px;
+      }
+    }
+  </style>
+{% endblock %}

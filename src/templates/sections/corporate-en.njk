@@ -1,0 +1,49 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+<title>SIC | Corporate</title>
+{% endblock %}
+
+{% block content %}
+<section class="soluciones">
+  <section class="cover corporativo">
+    <h1 class="cover-title barlow-medium">Corporate</h1>
+    <p class="cover-description opensans-regular">
+      Support, administration, diagnosis and repair of computer equipment <span class="opensans-bold">in your facilities</span> or via secured remote access by our <span class="opensans-bold">certified technicians.</span>
+    </p>
+    <a href="quote-en.html">
+      <button class="sic-button barlow-bold fs-13">get a quote</button>
+    </a>
+  </section>
+
+  <section class="card-container">
+    <div class="card">
+      <div class="card-info">
+        <img class="card-icon iconoCorporativo" src="img/icons/icono-corporativo.png" alt="Corporate icon">
+        <h2 class="card-title opensans-semibold">PC Support</h2>
+        <p class="card-description opensans-semibold">Support, administration, diagnosis and repair of computer equipment in your facilities or via secured remote access by our certified technicians or bringing/ship the equipment to our labs where certified technicians will perform the required activities.<br>We will customize our service contracts according to your needs.</p>
+      </div>
+      <div class="card-img-container">
+        <img class="card-img" src="img/soluciones/pc-support-3x.jpg" alt="PC Support">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-info">
+        <img class="card-icon iconoRenovacion" src="img/icons/icono-global.png" alt="Global icon">
+        <h2 class="card-title opensans-semibold">Technological Refresh</h2>
+        <p class="card-description opensans-semibold">Configuration of a customized Operating System images to meet customer requirements or Installation of already pre-approved images and migration of user data in a secure, efficient and orderly way from the user current computer to the new one.<br>An asset tagging to supply the client a comprehensive up-to-date inventory resulting in an integrated asset management delivery for the company/user.</p>
+      </div>
+      <div class="card-img-container">
+        <img class="card-img" src="img/soluciones/renovacion-tecnologica-3x.jpg" alt="Technological Refresh">
+      </div>
+    </div>
+
+    <div class="card-btnContainer">
+      <a href="quote-en.html">
+        <button class="sic-button barlow-bold fs-13">get a quote</button>
+      </a>
+    </div>
+  </section>
+</section>
+{% endblock %}

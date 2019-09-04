@@ -24,15 +24,15 @@
         margin-top 80px
 
   &-solutions
-    background-image url("../img/backgrounds/bg-home-solutions.png")
+    background-image url("../img/backgrounds/bg-home-solutions.jpg")
     background-position center
     background-repeat no-repeat
     background-size cover
     display flex
     flex-direction row
-    height 498px
-    justify-content center
-    padding-top 109px
+    height 496px
+    padding-top 40px
+    padding-left 142px
 
     &-button
       &-desktop
@@ -43,14 +43,14 @@
 
     &-title
       &-container
-        margin-bottom 18px
-        max-width 320px
+        margin-bottom 50px
+        max-width 317px
 
     &-info
       &-container
         display flex
         flex-wrap wrap
-        margin 12px 0 0 150px
+        margin 12px 0 0 0
         height 274px
         width 413px
 
@@ -58,87 +58,110 @@
         width 170px
 
         &:nth-child(odd)
-          margin-right 73px
+          margin-right 60px
 
         &:nth-child(-n + 2)
-          margin-bottom 63px
+          margin-bottom 0
 
     &-icon
       &-container
         align-items center
         display flex
-        height 42px
-        margin-bottom 21px
+        height 51px
+        margin-bottom 9px
 
-      &-renovation,
+      &-renovation
+        height 47px
+        width 53px
+
       &-extension
-        height 42px
-        width 41px
+        height 51px
+        width 39px
 
       &-instalation
-        height 35px
-        width 35px
+        height 41px
+        width 41px
 
       &-warranty
-        height 25px
-        width 38px
+        height 47px
+        width 41px
 
   &-clients
-    background-image url("../img/backgrounds/bg-home-our-clientes.jpg")
-    background-position center
-    background-repeat no-repeat
-    background-size cover
+    align-items center
     display flex
-    flex-direction row
-    height 305px
-    justify-content center
-    padding-top 56px
+    height 131px
 
-    &-info
-      margin-bottom 30px
+    &-carousel
+      margin 0 auto
+      position relative
+      width 1180px
 
-    &-title
-      &-container
-        margin-bottom 15px
-
-    &-logos
-      &-container
+      & .owl-stage
         display flex
-        flex-wrap wrap
-        height 114px
-        justify-content space-between
-        margin 10px 0 0 160px
-        width 345px
 
-    &-logo
-
-      &-content
+      & .owl-item
         align-items center
         display flex
-        height 32px
-        width 134px
+        justify-content center
 
-        &:nth-child(-n + 2)
-          margin-bottom 60px
+      & .owl-nav
+        .owl-prev,
+        .owl-next
+          bottom 0
+          height 16px
+          margin auto 0
+          position absolute
+          top 0
 
-      &-touch
-        height 28px
-        width 152.36px
+        .owl-prev
+          left -34px
+
+        .owl-next
+          right -34px
+
+        .navigation-icon
+          height 16px
+          width 10px
+
+    &-logo
+      display flex
+      justify-content center
+      width 236px
 
       &-dell
         height 32px
-        width 93px
+        width 188px !important
 
-      &-diebold
-        height 24px
-        width 134px
+      &-touch
+        height 28px
+        width 145px !important
 
-      &-enova
-        height 40px
-        width 108px
+      &-ricoh
+        height 26.25px
+        width 140px !important
+
+      &-ford
+        height 47.69px
+        width 125px !important
+
+      &-egs
+        height 40.13px
+        width 158px !important
+
+      &-cyg
+        height 54.52px
+        width 160px !important
+
+      &-fecolfin
+        height 58.34px
+        width 134px !important
+
+      &-quick
+        height 37.47px
+        width 120px !important
 
   &-location
-    background-image url("../img/backgrounds/bg-home-where-we-are.png")
+    background-image url("../img/backgrounds/donde-estamos-fondo.jpg")
     background-position top left
     background-repeat no-repeat
     background-size cover
@@ -146,8 +169,21 @@
     flex-direction row
     height 657px
     justify-content center
-    margin-top -31px
+    // margin-top -31px
     padding 124px 0 0 0
+    position relative
+
+    &:before
+      content ""
+      background-image url("../img/backgrounds/donde-estamos-personas.png")
+      background-position bottom left
+      background-repeat no-repeat
+      background-size contain
+      height 104%
+      position absolute
+      bottom 0
+      left 3%
+      width 38%
 
     &-info
       margin-bottom 50px
@@ -270,7 +306,7 @@
     background-image url("../img/backgrounds/bg-home-cover-two.jpg")
 
   &-three
-    background-image url("../img/backgrounds/bg-home-cover-three.jpg")
+    background-image url("../img/backgrounds/bg-home-cover-three-v2.jpg")
 
   &-four
     background-image url("../img/backgrounds/bg-home-cover-four.jpg")
@@ -280,6 +316,7 @@
 
 .owl-dots
   bottom 73px
+  pointer-events none
   position absolute
   right 73px
 
@@ -288,6 +325,7 @@
   background-color #d8d8d8 !important
   height 8px
   margin 0 5px
+  pointer-events none
   width 8px
 
 .owl-dot.active
@@ -299,6 +337,38 @@
     &-location
       margin-top -60px
 
+////////////////////////////////////////
+// MEDIA QUERIES FOR THE LOGOS CAROUSEL
+////////////////////////////////////////
+
+@media screen and (max-width 1290px)
+  .home
+    &-clients
+      &-carousel
+        width 944px
+
+@media screen and (max-width 1060px)
+  .home
+    &-clients
+      &-carousel
+        width 708px
+
+@media screen and (max-width 840px)
+  .home
+    &-clients
+      &-carousel
+        width 472px
+
+@media screen and (max-width 580px)
+  .home
+    &-clients
+      &-carousel
+        width 236px
+
+////////////////////////////////////////
+// END SECTION
+////////////////////////////////////////
+
 @media screen and (min-width 860px) and (max-width 1130px)
   .home
     &-cover
@@ -307,7 +377,7 @@
     &-solutions
       &-info
         &-container
-          margin 12px 0 0 60px
+          margin 12px 0 0 0
 
     &-clients
       &-logos
@@ -328,6 +398,23 @@
         &-content
           &:nth-child(1)
             margin-right 70px
+
+@media screen and (max-width 940px)
+  .home
+    &-location
+      background-position top right
+      height auto
+      justify-content center
+      padding 70px 0
+
+      &:before
+        content unset
+
+      &-info
+        &-container
+          justify-content center
+          padding-right 0
+          width 100%
 
 @media screen and (max-width 859px)
   .home
@@ -367,12 +454,6 @@
           max-width initial
 
       &-info
-        &-container
-          justify-content center
-          height auto
-          margin-left 0
-          width 100%
-
         &-content
           width 140px
 
@@ -410,20 +491,6 @@
 
           &:nth-child(2) img
             margin-right 16px
-            
-
-    &-location
-      background-position top right
-      height auto
-      margin-top -20px
-      justify-content center
-      padding 70px 0
-
-      &-info
-        &-container
-          justify-content center
-          padding-right 0
-          width 100%
 
     &-service
       &-iframe
@@ -471,15 +538,15 @@
 @media screen and (max-width 433px)
   .home
     &-solutions
-      max-width 320px
+      background-position center right 38%
 
       &-info
+        &-container
+          width 100%
+
         &-content
           margin 0 0 30px 0 !important
-          width 122px
+          width 50%
 
           & span
-            font-size 10px
-
-          &:nth-child(odd)
-            margin-right 15px !important
+            font-size 12px

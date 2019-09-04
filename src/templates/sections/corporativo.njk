@@ -1,0 +1,49 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+<title>SIC | Corporativo</title>
+{% endblock %}
+
+{% block content %}
+<section class="soluciones">
+  <section class="cover corporativo">
+    <h1 class="cover-title barlow-medium">Corporativo</h1>
+    <p class="cover-description opensans-regular">
+      Soporte, administración y reparación de equipo de cómputo en <span class="opensans-bold">sus instalaciones</span>  o vía remota por nuestros <span class="opensans-bold">técnicos certificados</span>.
+    </p>
+    <a href="cotiza.html">
+      <button class="sic-button barlow-bold fs-13">cotiza</button>
+    </a>
+  </section>
+
+  <section class="card-container">
+    <div class="card">
+      <div class="card-info">
+        <img class="card-icon iconoCorporativo" src="img/icons/icono-corporativo.png" alt="Ícono Corporativo">
+        <h2 class="card-title opensans-semibold">PC Support</h2>
+        <p class="card-description opensans-semibold">Soporte, administración y reparación de equipo de cómputo en sus instalaciones  o vía remota por nuestros técnicos certificados.<br>Contamos con contratos de servicio personalizados de acuerdo a sus necesidades.</p>
+      </div>
+      <div class="card-img-container">
+        <img class="card-img" src="img/soluciones/pc-support-3x.jpg" alt="PC Support">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-info">
+        <img class="card-icon iconoRenovacion" src="img/icons/icono-global.png" alt="Ícono global">
+        <h2 class="card-title opensans-semibold">Renovación Tecnológica</h2>
+        <p class="card-description opensans-semibold">Instalación y migración de información en forma rápida, ordenada y segura de su equipo de cómputo actual al nuevo.<br>Se agrega una relación de inventario con número de serie de los diferentes componentes  dando como resultado una solución integral a la empresa/usuario.</p>
+      </div>
+      <div class="card-img-container">
+        <img class="card-img" src="img/soluciones/renovacion-tecnologica-3x.jpg" alt="Renovación Tecnológica">
+      </div>
+    </div>
+
+    <div class="card-btnContainer">
+      <a href="cotiza.html">
+        <button class="sic-button barlow-bold fs-13">cotiza</button>
+      </a>
+    </div>
+  </section>
+</section>
+{% endblock %}
