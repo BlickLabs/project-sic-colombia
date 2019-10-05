@@ -1,9 +1,6 @@
 .footer
   align-items center
-  background-image url("../img/backgrounds/bg-footer.jpg")
-  background-position bottom
-  background-repeat no-repeat
-  background-size cover
+  background-color #3d5881
   bottom 0
   display flex
   flex-direction row
@@ -13,8 +10,8 @@
   width 100%
 
   &-logo
-    height 51px
-    width 153px
+    height 96px
+    width 96px
 
     &-container
       height 149px
@@ -46,8 +43,40 @@
       &-mobile
         display none
 
+  &-rs
+    &-container
+      align-items center
+      display flex
+
+      & a
+        align-items center
+        display flex
+        margin 0 6px
+
+      & a:hover
+        svg g,
+        svg g path
+          fill #38455f
+
+    &-instagram
+      height 16px
+      width 14px
+
+    &-linkedin
+      height 16px
+      width 16px
+
+    &-whatsapp
+      height 18px
+      width 16px
+
   &-view
+    display flex
+    flex-direction column
     margin-top 45px
+
+    & a
+      margin-bottom 10px
 
     & a:hover span
       color #3b79d1
@@ -62,6 +91,20 @@
       & span
         letter-spacing 0.9px
         text-transform uppercase
+
+  &-social
+    margin-top 45px
+
+    &-mobile
+      display none
+
+    & a:nth-child(1)
+      margin-right 20px
+      
+
+    &-icon
+      height 26px
+      width 26px
 
   &-separator
     background-color $white
@@ -93,6 +136,25 @@
 #last-footer-info-content
   max-width 252px
 
+.icon
+  &-fb
+    &:hover svg
+      fill #38455f
+
+    & svg
+      fill #ffffff
+      height 16px
+      width auto
+
+  &-twitter
+    &:hover svg
+      fill #38455f
+
+    & svg
+      fill #ffffff
+      height 17px
+      width auto
+
 @media screen and (min-width 920px) and (max-width 1100px)
   .footer
     &-info
@@ -110,6 +172,7 @@
     &-logo
       &-container
         height 100px
+        margin-bottom 50px
 
     &-info
       &-column
@@ -126,11 +189,12 @@
     padding 0 25px
 
     &-logo
-      height 40px
-      width 120px
+      height 96px
+      width 96px
 
       &-container
-        height 85px
+        height 96px
+        margin-bottom 50px
 
     &-info
       align-items center
@@ -170,10 +234,22 @@
       &-link
         margin 0 7px 12px 7px
 
+    &-social
+      display none
+
+      &-mobile
+        display block
+
+        & a:nth-child(1)
+          margin-right 20px
+
     &-separator
       height 1px
       margin 30px 0
       width 95%
+
+    &-rs-container
+      justify-content center
 
   #last-footer-info-content
     text-align center

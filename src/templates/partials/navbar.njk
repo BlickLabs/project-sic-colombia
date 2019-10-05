@@ -23,9 +23,26 @@
       </div>
     </div>
     <div class="navbar-sections-content">
-      <a href="soluciones.html">
-        <span class="barlow-bold fs-14 navbar-sections-title {% if section != 'index' %} navbar-sections-scroll {% endif %} {% if section == 'soluciones' %} active-link {% endif %}">SOLUCIONES</span>
-      </a>
+      <button class="barlow-bold fs-14 navbar-sections-title open-dropdown {% if section != 'index' %} navbar-sections-scroll {% endif %} {% if section == 'corporativos' or section == 'servicio-tecnico' or section == 'redes' or section == 'reparacion-de-equipos' %} active-link {% endif %}" onclick="functionDropdownSoluciones()">SOLUCIONES
+        <div class="navbar-dropdown-icon-container">
+          <img class="navbar-dropdown-icon" src="img/icons/icon-dropdown.png">
+          <img class="navbar-dropdown-icon-scroll {% if section != 'index' %} show-icon {% endif %}" src="img/icons/icon-dropdown-blue.png">
+        </div>
+      </button>
+      <div id="dropdownSoluciones" class="dropdown-content">
+        <a href="corporativo.html">
+          <span class="barlow-bold fs-14">CORPORATIVO</span>
+        </a>
+        <a href="servicio-tecnico.html">
+          <span class="barlow-bold fs-14">SERVICIO TÉCNICO</span>
+        </a>
+        <a href="redes.html">
+          <span class="barlow-bold fs-14">REDES</span>
+        </a>
+        <a href="reparacion-de-equipos.html">
+          <span class="barlow-bold fs-14">REPARACIÓN DE EQUIPOS</span>
+        </a>
+      </div>
     </div>
     <div class="navbar-sections-content">
       <button class="barlow-bold fs-14 navbar-sections-title open-dropdown {% if section != 'index' %} navbar-sections-scroll {% endif %} {% if section == 'donde-estamos' or section == 'contacto' %} active-link {% endif %}" onclick="myFunction2()">CONTACTO
@@ -51,12 +68,12 @@
     <div class="navbar-separator"></div>
     <div class="navbar-lang-container">
       <div class="navbar-lang-content">
-        <a href="{% if section == 'index-en' %} index.html {% elif section == 'policy-privacy' %} aviso-de-privacidad.html {% elif section == 'contact-us-en' %} contacto.html {% elif section == 'quote-en' %} cotiza.html {% elif section == 'office-locations-en' %} donde-estamos.html {% elif section == 'guarantee-en' %} garantias.html {% elif section == 'about-us-en' %} quienes-somos.html  {% elif section == 'awards-en' %} reconocimientos.html {% elif section == 'solutions-en' %} soluciones.html {% endif %}">
-          <span class="barlow-bold fs-14 navbar-sections-title {% if section != 'index' %} navbar-sections-scroll {% endif %}" style="{% if section == 'index' or section == 'aviso-de-privacidad' or section == 'contacto' or section == 'cotiza' or section == 'donde-estamos' or section == 'garantias' or section == 'quienes-somos' or section == 'reconocimientos' or section == 'soluciones' %} font-weight: bold; {% endif %}">ES</span>
+        <a href="{% if section == 'index-en' %} index.html {% elif section == 'policy-privacy' %} aviso-de-privacidad.html {% elif section == 'contact-us-en' %} contacto.html {% elif section == 'quote-en' %} cotiza.html {% elif section == 'office-locations-en' %} donde-estamos.html {% elif section == 'warranties' %} garantias.html {% elif section == 'about-us-en' %} quienes-somos.html  {% elif section == 'awards-en' %} reconocimientos.html {% elif section == 'solutions-en' %} soluciones.html {% elif section == 'corporate-en' %} corporativo.html {% elif section == 'technical-service-en' %} servicio-tecnico.html {% elif section == 'networking-en' %} redes.html {% elif section == 'equipment-repair-en' %} reparacion-de-equipos.html {% elif section == 'thank-you' %} gracias.html {% endif %}">
+          <span class="barlow-bold fs-14 navbar-sections-title {% if section != 'index' %} navbar-sections-scroll {% endif %}" style="{% if section == 'index' or section == 'aviso-de-privacidad' or section == 'contacto' or section == 'cotiza' or section == 'donde-estamos' or section == 'garantias' or section == 'quienes-somos' or section == 'reconocimientos' or section == 'soluciones' or section == 'corporativo' or section == 'servicio-tecnico' or section == 'redes' or section == 'reparacion-de-equipos' %} font-weight: bold; {% endif %}">ES</span>
         </a>
       </div>
       <div class="navbar-lang-content">
-        <a href="{% if section == 'index' %} index-en.html {% elif section == 'aviso-de-privacidad' %} policy-privacy.html {% elif section == 'contacto' %} contact-us-en.html {% elif section == 'cotiza' %} quote-en.html {% elif section == 'donde-estamos' %} office-locations-en.html {% elif section == 'garantias' %} guarantee-en.html {% elif section == 'quienes-somos' %} about-us-en.html  {% elif section == 'reconocimientos' %} awards-en.html {% elif section == 'soluciones' %} solutions-en.html {% endif %}">
+        <a href="{% if section == 'index' %} index-en.html {% elif section == 'aviso-de-privacidad' %} policy-privacy.html {% elif section == 'contacto' %} contact-us-en.html {% elif section == 'cotiza' %} quote-en.html {% elif section == 'donde-estamos' %} office-locations-en.html {% elif section == 'garantias' %} warranties.html {% elif section == 'quienes-somos' %} about-us-en.html  {% elif section == 'reconocimientos' %} awards-en.html {% elif section == 'soluciones' %} solutions-en.html {% elif section == 'corporativo' %} corporate-en.html {% elif section == 'servicio-tecnico' %} technical-service-en.html {% elif section == 'redes' %} networking-en.html {% elif section == 'reparacion-de-equipos' %} equipment-repair-en.html {% elif section == 'gracias' %} thank-you.html {% endif %}">
           <span class="barlow-medium fs-14 navbar-sections-title {% if section != 'index' %} navbar-sections-scroll {% endif %}">EN</span>
         </a>
       </div>
@@ -72,16 +89,39 @@
         </div>
       </button>
       <div id="myDropdown3" class="dropdown-content">
-        <a href="">
+        <a href="https://sic.com.mx/">
           <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-mx.png">
         </a>
-        <a href="">
+        <a href="https://arg.sic-la.com/">
           <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-arg.png">
         </a>
-        <a href="">
+        <a href="https://sic-chile.cl/">
           <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-chi.png">
         </a>
       </div>
+    </div>
+
+    <div class="whatsappContainer">
+      <a class="whatsappClick ws_all" href="https://api.whatsapp.com/send?phone=573183625994" target="_blank" style="display:none">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="17" viewBox="0 0 16 17">
+          <g fill="none" fill-rule="evenodd">
+            <g transform="translate(0 .01)">
+              <path fill="#FEFEFE" d="M8.11 14.606c-2.025 0-3.646-1.101-3.646-1.101l-2.488.816.808-2.422s-1.29-1.796-1.29-3.948c0-3.676 2.962-6.656 6.616-6.656 3.655 0 6.617 2.98 6.617 6.656 0 3.675-2.962 6.655-6.617 6.655m0-14.578C3.76.028.234 3.575.234 7.95c0 2.171 1.143 4.112 1.143 4.112L0 16.283l4.316-1.388s1.602.978 3.794.978c4.35 0 7.877-3.547 7.877-7.922 0-4.376-3.526-7.923-7.877-7.923" mask="url(#b)"/>
+            </g>
+            <path fill="#FEFEFE" d="M5.111 4.511s.213-.135.324-.135h.62s.167.029.243.203c.077.174.6 1.41.639 1.506.039.096.14.332-.023.543-.163.211-.503.606-.503.606s-.135.122-.018.317c.116.194.528.836 1.065 1.32.538.485 1.196.842 1.525.95.328.109.4-.036.526-.199l.517-.66s.135-.199.4-.077c.265.122 1.556.751 1.556.751s.157.027.166.204c.01.176.117.704-.35 1.212-.468.508-1.463.743-1.934.61-.47-.132-2.028-.542-3.044-1.495-1.015-.952-1.838-1.955-2.174-2.695-.337-.74-.318-1.178-.3-1.385.02-.207.128-1.165.765-1.576"/>
+          </g>
+        </svg>
+      </a>
+      <a class="whatsappClick ws_safari" href="https://web.whatsapp.com/send?phone=573183625994" target="_blank" style="display:none">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="17" viewBox="0 0 16 17">
+          <g fill="none" fill-rule="evenodd">
+            <g transform="translate(0 .01)">
+              <path fill="#FEFEFE" d="M8.11 14.606c-2.025 0-3.646-1.101-3.646-1.101l-2.488.816.808-2.422s-1.29-1.796-1.29-3.948c0-3.676 2.962-6.656 6.616-6.656 3.655 0 6.617 2.98 6.617 6.656 0 3.675-2.962 6.655-6.617 6.655m0-14.578C3.76.028.234 3.575.234 7.95c0 2.171 1.143 4.112 1.143 4.112L0 16.283l4.316-1.388s1.602.978 3.794.978c4.35 0 7.877-3.547 7.877-7.922 0-4.376-3.526-7.923-7.877-7.923" mask="url(#b)"/>
+            </g>
+            <path fill="#FEFEFE" d="M5.111 4.511s.213-.135.324-.135h.62s.167.029.243.203c.077.174.6 1.41.639 1.506.039.096.14.332-.023.543-.163.211-.503.606-.503.606s-.135.122-.018.317c.116.194.528.836 1.065 1.32.538.485 1.196.842 1.525.95.328.109.4-.036.526-.199l.517-.66s.135-.199.4-.077c.265.122 1.556.751 1.556.751s.157.027.166.204c.01.176.117.704-.35 1.212-.468.508-1.463.743-1.934.61-.47-.132-2.028-.542-3.044-1.495-1.015-.952-1.838-1.955-2.174-2.695-.337-.74-.318-1.178-.3-1.385.02-.207.128-1.165.765-1.576"/>
+          </g>
+        </svg>
+      </a>
     </div>
   </div>
 
@@ -120,9 +160,24 @@
       </div>
       <div class="hamburger-separator"></div>
       <div class="navbar-sections-content" data-attribute="">
-        <a href="soluciones.html" data-attribute="">
-          <span class="barlow-bold fs-14 {% if section == 'soluciones' %} active-link {% endif %}">SOLUCIONES</span>
-        </a>
+        <span class="barlow-bold fs-14 open-dropdown {% if section == 'corporativos' or section == 'servicio-tecnico' or section == 'redes' or section == 'reparacion-de-equipos' %} active-link {% endif %}" onclick="functionDropdownSolucionesHamburger()" data-attribute="">SOLUCIONES</span>
+        <div class="navbar-dropdown-icon-container">
+          <img class="navbar-dropdown-icon-mobile" src="img/icons/icon-dropdown.png" data-attribute="">
+        </div>
+        <div id="dropdownSolucionesHamburger" class="dropdown-content">
+          <a href="corporativo.html">
+            <span class="barlow-bold fs-14">CORPORATIVO</span>
+          </a>
+          <a href="servicio-tecnico.html">
+            <span class="barlow-bold fs-14">SERVICIO TÉCNICO</span>
+          </a>
+          <a href="redes.html">
+            <span class="barlow-bold fs-14">REDES</span>
+          </a>
+          <a href="reparacion-de-equipos.html">
+            <span class="barlow-bold fs-14">REPARACIÓN DE EQUIPOS</span>
+          </a>
+        </div>
       </div>
       <div class="hamburger-separator"></div>
       <div class="navbar-sections-content" data-attribute="">
@@ -148,13 +203,13 @@
       <div class="hamburger-separator"></div>
       <div class="navbar-lang-container" data-attribute="">
         <div class="navbar-lang-content" data-attribute="">
-          <a href="{% if section == 'index-en' %} index.html {% elif section == 'policy-privacy' %} aviso-de-privacidad.html {% elif section == 'contact-us-en' %} contacto.html {% elif section == 'quote-en' %} cotiza.html {% elif section == 'office-locations-en' %} donde-estamos.html {% elif section == 'guarantee-en' %} garantias.html {% elif section == 'about-us-en' %} quienes-somos.html  {% elif section == 'awards-en' %} reconocimientos.html {% elif section == 'solutions-en' %} soluciones.html {% endif %}" data-attribute="">
-            <span class="barlow-bold fs-14" style="{% if section == 'index' or section == 'aviso-de-privacidad' or section == 'contacto' or section == 'cotiza' or section == 'donde-estamos' or section == 'garantias' or section == 'quienes-somos' or section == 'reconocimientos' or section == 'soluciones' %} font-weight: bold; {% endif %}">ES</span>
+          <a href="{% if section == 'index-en' %} index.html {% elif section == 'policy-privacy' %} aviso-de-privacidad.html {% elif section == 'contact-us-en' %} contacto.html {% elif section == 'quote-en' %} cotiza.html {% elif section == 'office-locations-en' %} donde-estamos.html {% elif section == 'warranties' %} garantias.html {% elif section == 'about-us-en' %} quienes-somos.html  {% elif section == 'awards-en' %} reconocimientos.html {% elif section == 'solutions-en' %} soluciones.html {% elif section == 'corporate-en' %} corporativo.html {% elif section == 'technical-service-en' %} servicio-tecnico.html {% elif section == 'networking-en' %} redes.html {% elif section == 'equipment-repair-en' %} reparacion-de-equipos.html {% elif section == 'thank-you' %} gracias.html {% endif %}">
+            <span class="barlow-bold fs-14 navbar-sections-title {% if section != 'index' %} navbar-sections-scroll {% endif %}" style="{% if section == 'index' or section == 'aviso-de-privacidad' or section == 'contacto' or section == 'cotiza' or section == 'donde-estamos' or section == 'garantias' or section == 'quienes-somos' or section == 'reconocimientos' or section == 'soluciones' or section == 'corporativo' or section == 'servicio-tecnico' or section == 'redes' or section == 'reparacion-de-equipos' %} font-weight: bold; {% endif %}">ES</span>
           </a>
         </div>
         <div class="navbar-lang-content" data-attribute="">
-          <a href="{% if section == 'index' %} index-en.html {% elif section == 'aviso-de-privacidad' %} policy-privacy.html {% elif section == 'contacto' %} contact-us-en.html {% elif section == 'cotiza' %} quote-en.html {% elif section == 'donde-estamos' %} office-locations-en.html {% elif section == 'garantias' %} guarantee-en.html {% elif section == 'quienes-somos-en' %} about-us-en.html  {% elif section == 'reconocimientos' %} awards-en.html {% elif section == 'soluciones' %} solutions-en.html {% endif %}" data-attribute="">
-            <span class="barlow-medium fs-14">EN</span>
+          <a href="{% if section == 'index' %} index-en.html {% elif section == 'aviso-de-privacidad' %} policy-privacy.html {% elif section == 'contacto' %} contact-us-en.html {% elif section == 'cotiza' %} quote-en.html {% elif section == 'donde-estamos' %} office-locations-en.html {% elif section == 'garantias' %} warranties.html {% elif section == 'quienes-somos' %} about-us-en.html  {% elif section == 'reconocimientos' %} awards-en.html {% elif section == 'soluciones' %} solutions-en.html {% elif section == 'corporativo' %} corporate-en.html {% elif section == 'servicio-tecnico' %} technical-service-en.html {% elif section == 'redes' %} networking-en.html {% elif section == 'reparacion-de-equipos' %} equipment-repair-en.html {% elif section == 'gracias' %} thank-you.html {% endif %}">
+            <span class="barlow-medium fs-14 navbar-sections-title {% if section != 'index' %} navbar-sections-scroll {% endif %}">EN</span>
           </a>
         </div>
       </div>
@@ -166,16 +221,39 @@
           <img class="navbar-dropdown-icon-mobile" src="img/icons/icon-dropdown.png" data-attribute="">
         </div>
         <div id="myDropdown3Hamburger" class="dropdown-content">
-          <a href="">
+          <a href="https://sic.com.mx/">
             <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-mx.png">
           </a>
-          <a href="">
+          <a href="https://arg.sic-la.com/">
             <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-arg.png">
           </a>
-          <a href="">
+          <a href="https://sic-chile.cl/">
             <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-chi.png">
           </a>
         </div>
+      </div>
+
+      <div class="whatsappContainer">
+        <a class="whatsappClick ws_all_mobile" href="https://api.whatsapp.com/send?phone=573183625994" target="_blank" style="display:none">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="17" viewBox="0 0 16 17">
+            <g fill="none" fill-rule="evenodd">
+              <g transform="translate(0 .01)">
+                <path fill="#FEFEFE" d="M8.11 14.606c-2.025 0-3.646-1.101-3.646-1.101l-2.488.816.808-2.422s-1.29-1.796-1.29-3.948c0-3.676 2.962-6.656 6.616-6.656 3.655 0 6.617 2.98 6.617 6.656 0 3.675-2.962 6.655-6.617 6.655m0-14.578C3.76.028.234 3.575.234 7.95c0 2.171 1.143 4.112 1.143 4.112L0 16.283l4.316-1.388s1.602.978 3.794.978c4.35 0 7.877-3.547 7.877-7.922 0-4.376-3.526-7.923-7.877-7.923" mask="url(#b)"/>
+              </g>
+              <path fill="#FEFEFE" d="M5.111 4.511s.213-.135.324-.135h.62s.167.029.243.203c.077.174.6 1.41.639 1.506.039.096.14.332-.023.543-.163.211-.503.606-.503.606s-.135.122-.018.317c.116.194.528.836 1.065 1.32.538.485 1.196.842 1.525.95.328.109.4-.036.526-.199l.517-.66s.135-.199.4-.077c.265.122 1.556.751 1.556.751s.157.027.166.204c.01.176.117.704-.35 1.212-.468.508-1.463.743-1.934.61-.47-.132-2.028-.542-3.044-1.495-1.015-.952-1.838-1.955-2.174-2.695-.337-.74-.318-1.178-.3-1.385.02-.207.128-1.165.765-1.576"/>
+            </g>
+          </svg>
+        </a>
+        <a class="whatsappClick ws_safari_mobile" href="https://web.whatsapp.com/send?phone=573183625994" target="_blank" style="display:none">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="17" viewBox="0 0 16 17">
+            <g fill="none" fill-rule="evenodd">
+              <g transform="translate(0 .01)">
+                <path fill="#FEFEFE" d="M8.11 14.606c-2.025 0-3.646-1.101-3.646-1.101l-2.488.816.808-2.422s-1.29-1.796-1.29-3.948c0-3.676 2.962-6.656 6.616-6.656 3.655 0 6.617 2.98 6.617 6.656 0 3.675-2.962 6.655-6.617 6.655m0-14.578C3.76.028.234 3.575.234 7.95c0 2.171 1.143 4.112 1.143 4.112L0 16.283l4.316-1.388s1.602.978 3.794.978c4.35 0 7.877-3.547 7.877-7.922 0-4.376-3.526-7.923-7.877-7.923" mask="url(#b)"/>
+              </g>
+              <path fill="#FEFEFE" d="M5.111 4.511s.213-.135.324-.135h.62s.167.029.243.203c.077.174.6 1.41.639 1.506.039.096.14.332-.023.543-.163.211-.503.606-.503.606s-.135.122-.018.317c.116.194.528.836 1.065 1.32.538.485 1.196.842 1.525.95.328.109.4-.036.526-.199l.517-.66s.135-.199.4-.077c.265.122 1.556.751 1.556.751s.157.027.166.204c.01.176.117.704-.35 1.212-.468.508-1.463.743-1.934.61-.47-.132-2.028-.542-3.044-1.495-1.015-.952-1.838-1.955-2.174-2.695-.337-.74-.318-1.178-.3-1.385.02-.207.128-1.165.765-1.576"/>
+            </g>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
